@@ -1,71 +1,83 @@
  ======================
-  ChangeLog 09-24-2018
+  ChangeLog 09-25-2018
  ======================
 
  * device/qcom/sepolicy
 
-    f57773f - sepolicy: Fix ` breakage (9 часов назад) <Rashed Abdel-Tawab>
+    f57773f - sepolicy: Fix ` breakage (22 часа назад) <Rashed Abdel-Tawab>
+
+ * device/xiaomi/msm8998-common
+
+    780a18d - msm8998-common: proprietary-files: update sha1sum for ims.apk (35 минут назад) <andr68rus>
+    2616b59 - msm8998-common: update audio flags (14 часов назад) <andr68rus>
 
  * frameworks/base
 
-    b21d33e - services: button brightness should check proximity (15 минут назад) <Erica Chang>
-    57a5cf8 - PowerManagerService: Fix updating of mUserActivitySummary I7f1fc35a1573717d1ea101a07c4171d6f66d1553 missed the fact that the primary purpose of the affected condition block was to update mUserActivitySummary and the button/keyboard light handling was just appended to it later. (16 минут назад) <nadlabak>
-    8043ec78 - power: Disable keyboard/button lights while dozing/dreaming (16 минут назад) <Steve Kondik>
-    9a33db9 - Add PowerManager integration for button backlight. Allows setting button backlight brightness as well as button timeout. (18 минут назад) <Danny Baumann>
-    de52e0f - Reintroduce button-backlight (and respective inactivity timeout) (31 минуту назад) <Ricardo Cerqueira>
-    286a3e0 - base: SystemUI: fix status bar mobile view layout problem (38 минут назад) <maxwen>
-    a8f583a - HACK base: disable requestBugReport (38 минут назад) <maxwen>
-    fbebf0e - base: SystemUI: fix height of old data type icons (38 минут назад) <maxwen>
-    efa8e34 - [1/2] Add a whitelist for location providers outside of /system (39 минут назад) <oshmoun>
-    bcfd52a - base: SystemUI: delete deprecated status bar view (39 минут назад) <maxwen>
-    e82103c - base: SystemUI: power dialog - use uniform bg color (39 минут назад) <maxwen>
-    a0b1844 - WifiDisplayController: handle preexisting p2p connection status (39 минут назад) <Li Sun>
-    f552766 - WiFiDisplayController: Defer the P2P Initialization from its constructor. (39 минут назад) <Purushottam Kushwaha>
-    57ef747 - Merge changes for launching wifidisplay from system settings (39 минут назад) <Indranil Chakraborty>
-    a9d8208 - display: Add support for multiple displays. (39 минут назад) <Dileep Marchya>
-    9215a9e - Revert "Remove getIntWithSubId in TelephonyManager." (40 минут назад) <jhenrique09>
+    b6e71ec - HACK base: disable requestBugReport (29 минут назад) <maxwen>
+    b8e5841 - base: SystemUI: fix height of old data type icons (30 минут назад) <maxwen>
+    6798168 - [1/2] Add a whitelist for location providers outside of /system (30 минут назад) <oshmoun>
+    d094fe0 - base: SystemUI: use uniform bg color in power menu (30 минут назад) <maxwen>
+    4b15042 - WifiDisplayController: handle preexisting p2p connection status (30 минут назад) <Li Sun>
+    368123e - WiFiDisplayController: Defer the P2P Initialization from its constructor. (30 минут назад) <Purushottam Kushwaha>
+    6e53461 - Merge changes for launching wifidisplay from system settings (30 минут назад) <Indranil Chakraborty>
+    456427b - display: Add support for multiple displays. (30 минут назад) <Dileep Marchya>
+    2ad76a4 - Revert "Remove getIntWithSubId in TelephonyManager." (30 минут назад) <jhenrique09>
+    fb75449 - base: SystemUI: fix status bar mobile view layout problem (10 часов назад) <maxwen>
+    080a862 - [1/2] base: config to disable power menu on secure lock screen (10 часов назад) <maxwen>
+    e9052f9 - base: SystemUI: delete deprecated status bar view (11 часов назад) <maxwen>
 
  * frameworks/native
 
-    8e098a3 - sf: Add support for multiple displays (39 минут назад) <Pullakavi Srinivas>
+    0a61af9 - sf: Add support for multiple displays (30 минут назад) <Pullakavi Srinivas>
 
  * frameworks/opt/net/wifi
 
-    01beca5 - WiFi: Ignore connectivity scans during WFD session (39 минут назад) <Arif Hussain>
+    9e29c11 - WiFi: Ignore connectivity scans during WFD session (30 минут назад) <Arif Hussain>
 
  * hardware/libhardware
 
-    996629e - libhardware: Add new display types. (39 минут назад) <Dileep Marchya>
+    496bbb0 - libhardware: Add new display types. (30 минут назад) <Dileep Marchya>
 
  * hardware/qcom/audio-caf-msm8998
 
-    a1471a0 - msm8998: hal: Update ultrasound route hacks (9 часов назад) <Demon Singur>
-    16599ae - msm8998: ultrasound: Initial open source hal for Elliptic Ultrasound (9 часов назад) <Balázs Triszka>
+    a1471a0 - msm8998: hal: Update ultrasound route hacks (22 часа назад) <Demon Singur>
+    16599ae - msm8998: ultrasound: Initial open source hal for Elliptic Ultrasound (22 часа назад) <Balázs Triszka>
 
  * hardware/qcom/bt
 
-    c855210 - bt: bring back bt_nv handling (7 часов назад) <Marko Man>
-    19ab9c6 - import caf-msm8998  LA.UM.7.4.r1-03000-8x98.0 (19 часов назад) <Marko Man>
+    c855210 - bt: bring back bt_nv handling (20 часов назад) <Marko Man>
 
  * kernel/xiaomi/msm8998
 
-    ef9ec88 - {chiron,sagit}_defconfig: disable compat VDSO support (3 часа назад) <andr68rus>
+    ef9ec88 - {chiron,sagit}_defconfig: disable compat VDSO support (15 часов назад) <andr68rus>
 
  * packages/apps/Dialer
 
-    32cadcd - PoorManTheme: fix log cards bg (38 минут назад) <Marko Man>
+    93b90a5 - PoorManTheme: fix log cards bg (10 часов назад) <Marko Man>
 
- * packages/apps/Gallery2
+ * packages/apps/OmniGears
 
-    b7ace31 - Gallery2: some eye candy for pie (39 минут назад) <maxwen>
-
- * packages/apps/SnapdragonCamera2
-
-    80986b5 - SnapdragonCamera2: fix record location (39 минут назад) <maxwen>
+    9f775b1 - [2/2] OmniGears: config to disable power menu on secure lock screen (10 часов назад) <maxwen>
 
  * vendor/xiaomi
 
-    b97e121 - Revert "chiron: use qdcm calibration from polaris" (12 часов назад) <andr68rus>
+    13fdd53 - msm8998-common: update ims.apk from Dp5_P_Semi_GSI_VoLTE_fix (66 минут назад) <andr68rus>
+
+ ======================
+  ChangeLog 09-24-2018
+ ======================
+
+ * device/xiaomi/msm8998-common
+
+    8a9b941 - sepolicy: remove neverallow (2 дня назад) <andr68rus>
+
+ * hardware/qcom/bt
+
+    19ab9c6 - import caf-msm8998  LA.UM.7.4.r1-03000-8x98.0 (32 часа назад) <Marko Man>
+
+ * vendor/xiaomi
+
+    b97e121 - Revert "chiron: use qdcm calibration from polaris" (24 часа назад) <andr68rus>
 
  ======================
   ChangeLog 09-23-2018
@@ -73,7 +85,20 @@
 
  * device/xiaomi/msm8998-common
 
-    8a9b941 - sepolicy: remove neverallow (35 часов назад) <andr68rus>
+    97b46f9 - [temp] add some picks from gerrit to bringup (3 дня назад) <andr68rus>
+    90bc270 - Merge github.com:wight554/device_xiaomi_msm8998-common into android-9.0 (3 дня назад) <andr68rus>
+    ac1c042 - msm8998-common: De-duplicate cpuset configuration (3 дня назад) <Wang Han>
+    58968cb - msm8998-common: remove unused perf props (3 дня назад) <Vol Zhdanov>
+    a8615e0 - msm8998-common: update display props for a new hal (3 дня назад) <Vol Zhdanov>
+    b376cc9 - msm8998-common: Disable sdm rotator downscaler (3 дня назад) <Jorim Jaggi>
+
+ * packages/apps/Gallery2
+
+    c6e265e - Gallery2: some eye candy for pie (2 дня назад) <maxwen>
+
+ * packages/apps/SnapdragonCamera2
+
+    f1b5013 - SnapdragonCamera2: fix record location (3 дня назад) <maxwen>
 
  ======================
   ChangeLog 09-22-2018
@@ -81,24 +106,19 @@
 
  * device/xiaomi/msm8998-common
 
-    97b46f9 - [temp] add some picks from gerrit to bringup (2 дня назад) <andr68rus>
-    90bc270 - Merge github.com:wight554/device_xiaomi_msm8998-common into android-9.0 (2 дня назад) <andr68rus>
-    ac1c042 - msm8998-common: De-duplicate cpuset configuration (2 дня назад) <Wang Han>
-    58968cb - msm8998-common: remove unused perf props (2 дня назад) <Vol Zhdanov>
-    a8615e0 - msm8998-common: update display props for a new hal (2 дня назад) <Vol Zhdanov>
-    b376cc9 - msm8998-common: Disable sdm rotator downscaler (2 дня назад) <Jorim Jaggi>
-    4bef6aa - msm8998-common: sepolicy: Address msm_irqbalanced denials (3 дня назад) <LuK1337>
-    a114077 - msm8998-common: sepolicy: let cnss daemon access calibration file (3 дня назад) <Demon Singur>
-    0bd80f0 - msm8998-common: sepolicy: label old doxlat prop (3 дня назад) <Demon Singur>
-    6c1b32e - msm8998-common: sepolicy: let camera hal access /data/misc files (3 дня назад) <Demon Singur>
-    8e478fe - msm8998-common: sepolicy: label props used by camera stack (3 дня назад) <Demon Singur>
-    8548f68 - msm8998-common: sepolicy: solve drm hal denials (3 дня назад) <Demon Singur>
-    7fb8ea1 - msm8998-common: sepolicy: solve vendor_init denials (3 дня назад) <Demon Singur>
-    972af72 - msm8998-common: sepolicy: label fpc data path (3 дня назад) <Demon Singur>
-    2e3bb7e - msm8998-common: sepolicy: label old qseecomd ready prop (3 дня назад) <Demon Singur>
-    3c56d04 - msm8998-common: rootdir: do not symlink sdcard legacy path (3 дня назад) <Demon Singur>
-    7171112 - msm8998-common: rootdir: do not create /tombstones symlink (3 дня назад) <Demon Singur>
-    015e685 - msm8998-common: sepolicy: fixes and improvements (3 дня назад) <Vol Zhdanov>
+    4bef6aa - msm8998-common: sepolicy: Address msm_irqbalanced denials (4 дня назад) <LuK1337>
+    a114077 - msm8998-common: sepolicy: let cnss daemon access calibration file (4 дня назад) <Demon Singur>
+    0bd80f0 - msm8998-common: sepolicy: label old doxlat prop (4 дня назад) <Demon Singur>
+    6c1b32e - msm8998-common: sepolicy: let camera hal access /data/misc files (4 дня назад) <Demon Singur>
+    8e478fe - msm8998-common: sepolicy: label props used by camera stack (4 дня назад) <Demon Singur>
+    8548f68 - msm8998-common: sepolicy: solve drm hal denials (4 дня назад) <Demon Singur>
+    7fb8ea1 - msm8998-common: sepolicy: solve vendor_init denials (4 дня назад) <Demon Singur>
+    972af72 - msm8998-common: sepolicy: label fpc data path (4 дня назад) <Demon Singur>
+    2e3bb7e - msm8998-common: sepolicy: label old qseecomd ready prop (4 дня назад) <Demon Singur>
+    3c56d04 - msm8998-common: rootdir: do not symlink sdcard legacy path (4 дня назад) <Demon Singur>
+    7171112 - msm8998-common: rootdir: do not create /tombstones symlink (4 дня назад) <Demon Singur>
+    015e685 - msm8998-common: sepolicy: fixes and improvements (4 дня назад) <Vol Zhdanov>
+    3c66384 - msm8998-common: slightly clean up readmac (4 дня назад) <dianlujitao>
 
  ======================
   ChangeLog 09-21-2018
@@ -106,75 +126,43 @@
 
  * device/xiaomi/chiron
 
-    5f919b2 - [temp] use omni-p git for sources (4 дня назад) <andr68rus>
+    5f919b2 - [temp] use omni-p git for sources (5 дней назад) <andr68rus>
+    0b3b161 - chiron: pin qdcm calibration from polaris (5 дней назад) <Vol Zhdanov>
 
  * device/xiaomi/msm8998-common
 
-    3c66384 - msm8998-common: slightly clean up readmac (3 дня назад) <dianlujitao>
-    23837ca - [temp] add kernel/vendor from omni-p git (4 дня назад) <andr68rus>
+    23837ca - [temp] add kernel/vendor from omni-p git (5 дней назад) <andr68rus>
+    c8b803c - omni dependencies: add SnapdragonCamera2 (5 дней назад) <andr68rus>
+    303646d - Merge https://github.com/wight554/device_xiaomi_msm8998-common into android-9.0 (5 дней назад) <andr68rus>
+    5dfdd05 - msm8998-common: Enable TARGET_USE_OLD_MNC_FORMAT (5 дней назад) <xyyx>
+    bd692b5 - msm8998-common: use proper payton graphics stack blobs sha1sums (5 дней назад) <Vol Zhdanov>
+    081df88 - msm8998-common: data-ipa-cfg-mgr: hal: fix unused argument (5 дней назад) <ShevT>
+    b5d1d65 - msm8998-common: data-ipa-cfg-mgr: fix compiler warning (5 дней назад) <ShevT>
 
  * device/xiaomi/sagit
 
-    9bfae14 - [temp] use omni-p git for sources (4 дня назад) <andr68rus>
-
- ======================
-  ChangeLog 09-20-2018
- ======================
-
- * device/xiaomi/chiron
-
-    0b3b161 - chiron: pin qdcm calibration from polaris (4 дня назад) <Vol Zhdanov>
-    4350a16 - chiron: audio: raise volume a bit (5 дней назад) <Vol Zhdanov>
-    d84f5b6 - chiron: add miui camera config (5 дней назад) <Vol Zhdanov>
-    58bde09 - chiron: update dependencies to pie (5 дней назад) <andr68rus>
-
- * device/xiaomi/msm8998-common
-
-    c8b803c - omni dependencies: add SnapdragonCamera2 (4 дня назад) <andr68rus>
-    303646d - Merge https://github.com/wight554/device_xiaomi_msm8998-common into android-9.0 (4 дня назад) <andr68rus>
-    5dfdd05 - msm8998-common: Enable TARGET_USE_OLD_MNC_FORMAT (4 дня назад) <xyyx>
-    bd692b5 - msm8998-common: use proper payton graphics stack blobs sha1sums (4 дня назад) <Vol Zhdanov>
-    081df88 - msm8998-common: data-ipa-cfg-mgr: hal: fix unused argument (4 дня назад) <ShevT>
-    b5d1d65 - msm8998-common: data-ipa-cfg-mgr: fix compiler warning (4 дня назад) <ShevT>
-    425128d - msm8998-common: fingerprint: keep in system-background (5 дней назад) <Tim Murray>
-    3eb841b - msm8998-common: squashed cleanup (5 дней назад) <Vol Zhdanov>
-    d3abaed - msm8998-common: overlay: do not use aosp dt2w switch (5 дней назад) <Vol Zhdanov>
-    e0efb33 - Revert "power-libperfmgr: control dt2w from power hal" (5 дней назад) <Vol Zhdanov>
-    f04060f - msm8998-common: {doze,parts}: Set LOCAL_PRIVATE_PLATFORM_APIS (5 дней назад) <Anton Hansson>
-    1691641 - msm8998-common: parts: use proper max vibration strenght value (5 дней назад) <Vol Zhdanov>
-    f33e3dd - msm8998-common: parts: fix left margin for vibrator pref (5 дней назад) <maxwen>
-    58bff39 - msm8998-common: parts: fix compilation for pie (5 дней назад) <Marko Man>
-    ec5ff4b - msm8998-common: import XiaomiParts we used before (5 дней назад) <Vol Zhdanov>
-    3c0c69a - msm8998-common: doze: fix switch text size and padding (5 дней назад) <xyyx>
-    62eecf3 - msm8998-common: doze: update switch bar style to P (5 дней назад) <xyyx>
-    b0e6f9e - msm8998-common: import resources from common devicesettings (5 дней назад) <Vol Zhdanov>
-    cc413ca - msm8998-common: add XiaomiDoze app (5 дней назад) <Bruno Martins>
-
- * device/xiaomi/sagit
-
-    bde7cf3 - sagit: update sepolicy (5 дней назад) <andr68rus>
-    8c33a72 - sagit: update dependencies to PIE (5 дней назад) <andr68rus>
+    9bfae14 - [temp] use omni-p git for sources (5 дней назад) <andr68rus>
 
  * frameworks/base
 
-    8dce0cc - policy: add more orientation sanity checks (4 дня назад) <Marko Man>
+    8dce0cc - policy: add more orientation sanity checks (5 дней назад) <Marko Man>
 
  * frameworks/opt/net/wifi
 
-    78fb782 - Wi-Fi : Abort setWifiEnabled if WifiController not ready (4 дня назад) <Abhishek Srivastava>
+    78fb782 - Wi-Fi : Abort setWifiEnabled if WifiController not ready (5 дней назад) <Abhishek Srivastava>
 
  * hardware/ril
 
-    d517fa6 - libril: network selection fix (4 дня назад) <faust93>
+    d517fa6 - libril: network selection fix (5 дней назад) <faust93>
 
  * vendor/omni
 
-    4c926fd - addon.d: gapps backup script just doesnt work for me (4 дня назад) <Marko Man>
-    33c6af3 - omni: reduce default size of quick_qs_offset_height (4 дня назад) <maxwen>
-    27dddde - omni: overlay updates (4 дня назад) <maxwen>
+    4c926fd - addon.d: gapps backup script just doesnt work for me (5 дней назад) <Marko Man>
+    33c6af3 - omni: reduce default size of quick_qs_offset_height (5 дней назад) <maxwen>
+    27dddde - omni: overlay updates (5 дней назад) <maxwen>
 
  * vendor/xiaomi
 
-    215b190 - msm8998-common: use proper payton graphics stack blobs (4 дня назад) <Vol Zhdanov>
-    b6ce3a5 - chiron: use qdcm calibration from polaris (4 дня назад) <Vol Zhdanov>
+    215b190 - msm8998-common: use proper payton graphics stack blobs (5 дней назад) <Vol Zhdanov>
+    b6ce3a5 - chiron: use qdcm calibration from polaris (5 дней назад) <Vol Zhdanov>
 
