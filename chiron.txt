@@ -1,222 +1,228 @@
  ======================
-  ChangeLog 09-27-2018
+  ChangeLog 09-30-2018
  ======================
 
  * device/xiaomi/msm8998-common
 
-    8c49796 - msm8998-common: stop building healthd cause its useless https://github.com/omnirom/android_hardware_interfaces/blob/android-9.0/health/2.0/README#L10 (2 часа назад) <andr68rus>
-    72dda1f - Merge github.com:wight554/device_xiaomi_msm8998-common into android-9.0 (16 часов назад) <andr68rus>
+    8e710b6 - DNM: Disable org.codeaurora.ims (59 минут назад) <Sam Mortimer>
+    0b292b9 - Merge github.com:wight554/device_xiaomi_msm8998-common into android-9.0 (18 часов назад) <andr68rus>
+    00d27df - msm8998-common: don't ship slightly modified miuicamera stuff as proprietary (19 часов назад) <Vol Zhdanov>
 
  * frameworks/base
 
-    0de788e - Revert "Remove getIntWithSubId in TelephonyManager." (16 часов назад) <jhenrique09>
+    9d7f60d - Revert "Remove getIntWithSubId in TelephonyManager." (56 минут назад) <jhenrique09>
+    c8468e6 - Stop invoke initAppOps in Camera default constructor. (56 минут назад) <Daichi Hirono>
+    2480215 - base: SystemUI: fix keyguard weather color update (12 часов назад) <maxwen>
+    6b28137 - base: SystemUI: rounded_ripple must use corner_size (12 часов назад) <maxwen>
 
  * kernel/xiaomi/msm8998
 
-    04e9b0e - Merge github.com:wight554/chiron into android-9.0 (16 часов назад) <andr68rus>
-    b704b35 - dts: xiaomi: msm8998: update chiron batterydata (16 часов назад) <Vol Zhdanov>
+    02e5749 - Merge github.com:wight554/chiron into android-9.0 (18 часов назад) <andr68rus>
 
  * packages/apps/Dialer
 
-    64a9dbd - Control dialer's incoming call proximity sensor check via an overlay (16 часов назад) <blunden>
+    778c497 - Control dialer's incoming call proximity sensor check via an overlay (56 минут назад) <blunden>
 
  * vendor/xiaomi
 
-    2220e6b - Merge github.com:wight554/vendor_xiaomi into android-9.0 (16 часов назад) <andr68rus>
+    c08bf9e - msm8998-common: remove wcnss_filter (18 часов назад) <Vol Zhdanov>
+
+ ======================
+  ChangeLog 09-29-2018
+ ======================
+
+ * frameworks/base
+
+    acc863f - UsbDeviceManager: Check PTP FileDescriptor properly (2 дня назад) <Wang Han>
+
+ * kernel/xiaomi/msm8998
+
+    54c18be - ANDROID: restrict store of prefer_idle as boolean (2 дня назад) <Wei Wang>
+    289cd0a - ANDROID: {chiron,sagit}_defconfig: Enable lz4 compression (2 дня назад) <Peter Kalauskas>
+    701836b - ANDROID: {chiron,sagit}_defconfig: Enable zstd compression (2 дня назад) <Peter Kalauskas>
+    59e3eb7 - BACKPORT: crypto: zstd - Add zstd support (2 дня назад) <Nick Terrell>
+    d3c8d58 - UPSTREAM: zram: add zstd to the supported algorithms list (2 дня назад) <Sergey Senozhatsky>
+    1e39b81 - UPSTREAM: lib: Add zstd modules (2 дня назад) <Nick Terrell>
+    08fdf27 - UPSTREAM: lib: Add xxhash module (2 дня назад) <Nick Terrell>
+    3ba5b6d - UPSTREAM: zram: rework copy of compressor name in comp_algorithm_store() (2 дня назад) <Matthias Kaehlcke>
+    c91ddd7 - UPSTREAM: zram: constify attribute_group structures. (2 дня назад) <Arvind Yadav>
+    02a96cb - UPSTREAM: zram: count same page write as page_stored (2 дня назад) <Minchan Kim>
+    53f0f82 - UPSTREAM: zram: reduce load operation in page_same_filled (2 дня назад) <Sangwoo Park>
+    0efbc68 - UPSTREAM: zram: use zram_free_page instead of open-coded (2 дня назад) <Minchan Kim>
+    3c40aae - UPSTREAM: zram: introduce zram data accessor (2 дня назад) <Minchan Kim>
+    20311af - UPSTREAM: zram: remove zram_meta structure (2 дня назад) <Minchan Kim>
+    01353d6 - UPSTREAM: zram: use zram_slot_lock instead of raw bit_spin_lock op (2 дня назад) <Minchan Kim>
+    dd89cec - BACKPORT: zram: partial IO refactoring (2 дня назад) <Minchan Kim>
+    337a262 - BACKPORT: zram: handle multiple pages attached bio's bvec (2 дня назад) <Minchan Kim>
+    62a01b7 - UPSTREAM: zram: fix operator precedence to get offset (2 дня назад) <Minchan Kim>
+    720d02f - BACKPORT: zram: extend zero pages to same element pages (2 дня назад) <zhouxianrong>
+    2f722f2 - BACKPORT: zram: remove waitqueue for IO done (2 дня назад) <Minchan Kim>
+    8f8a85c - UPSTREAM: zram: remove obsolete sysfs attrs (2 дня назад) <Sergey Senozhatsky>
+    dd9bfc9 - UPSTREAM: zram: support BDI_CAP_STABLE_WRITES (2 дня назад) <Minchan Kim>
+    4d0bd19 - UPSTREAM: zram: revalidate disk under init_lock (2 дня назад) <Minchan Kim>
+    e5e53a3 - BACKPORT: mm: support anonymous stable page (2 дня назад) <Minchan Kim>
+    87aedc6 - UPSTREAM: zram: drop gfp_t from zcomp_strm_alloc() (2 дня назад) <Sergey Senozhatsky>
+    f6beedc - UPSTREAM: zram: add more compression algorithms (2 дня назад) <Sergey Senozhatsky>
+    fa544fb - UPSTREAM: zram: delete custom lzo/lz4 (2 дня назад) <Sergey Senozhatsky>
+    8d8693d - UPSTREAM: zram: cosmetic: cleanup documentation (2 дня назад) <Sergey Senozhatsky>
+    b9ece24 - UPSTREAM: zram: use crypto api to check alg availability (2 дня назад) <Sergey Senozhatsky>
+    ca22595 - BACKPORT: zram: switch to crypto compress API (2 дня назад) <Sergey Senozhatsky>
+    a644d3e - UPSTREAM: zram: rename zstrm find-release functions (2 дня назад) <Sergey Senozhatsky>
+    a3b210e - UPSTREAM: zram: introduce per-device debug_stat sysfs node (2 дня назад) <Sergey Senozhatsky>
+    de2981a - UPSTREAM: zram: remove max_comp_streams internals (2 дня назад) <Sergey Senozhatsky>
+    7842111 - UPSTREAM: zram: user per-cpu compression streams (2 дня назад) <Sergey Senozhatsky>
+    a367c6a - UPSTREAM: zram/zcomp: do not zero out zcomp private pages (2 дня назад) <Sergey Senozhatsky>
+    fc4be6e - UPSTREAM: zram: pass gfp from zcomp frontend to backend (2 дня назад) <Minchan Kim>
+
+ ======================
+  ChangeLog 09-28-2018
+ ======================
+
+ * device/xiaomi/msm8998-common
+
+    690a2ad - msm8998-common: remove wcnss_filter (3 дня назад) <Demon Singur>
+    648d2db - Revert "msm8998-common: rootdir: performance: Use LMK setting oom_reaper=1" (3 дня назад) <Vol Zhdanov>
+    ec7704a - msm8998-common: Disable AUDIO_FEATURE_ENABLED_KPI_OPTIMIZE (3 дня назад) <Sultanxda>
+    2a20d61 - msm8998-common: sepolicy: fix bootloop init: Could not start service 'vendor.health-hal-2-0' as part of class 'hal': File /vendor/bin/hw/android.hardware.health@2.0-service.xiaomi_msm8998(labeled "u:object_r:vendor_file:s0") has incorrect label or no domain transition from u:r:init:s0 to another SELinux domain defined. (3 дня назад) <andr68rus>
+
+ * vendor/omni
+
+    f2e164f - omni: overlay: set power menu and volume dialog corner to same as system (3 дня назад) <maxwen>
+
+ ======================
+  ChangeLog 09-27-2018
+ ======================
+
+ * device/xiaomi/chiron
+
+    232b67c - chiron: audio: increase volume even more (4 дня назад) <Vol Zhdanov>
+
+ * device/xiaomi/msm8998-common
+
+    8c49796 - msm8998-common: stop building healthd cause its useless https://github.com/omnirom/android_hardware_interfaces/blob/android-9.0/health/2.0/README#L10 (3 дня назад) <andr68rus>
+    729cd01 - msm8998-common: exclude healthd (3 дня назад) <Vol Zhdanov>
+    72dda1f - Merge github.com:wight554/device_xiaomi_msm8998-common into android-9.0 (4 дня назад) <andr68rus>
+
+ * kernel/xiaomi/msm8998
+
+    d6b150b - qcacld-3.0: Use array_size() in vmalloc() (3 дня назад) <Kees Cook>
+    ac2474d - icnss: Add a flag to indicare FW rejuvenate (3 дня назад) <Anurag Chouhan>
+    0afbe9b - staging: qca-wifi-host-cmn: Merge tag 'LA.UM.7.4.r1-03500-8x98.0' into pie (3 дня назад) <Vol Zhdanov>
+    b5258632 - staging: qcacld-3.0: Merge tag 'LA.UM.7.4.r1-03500-8x98.0' into pie (3 дня назад) <Vol Zhdanov>
+    1ff7eb3 - staging: fw-api: Merge tag 'LA.UM.7.4.r1-03500-8x98.0' into pie (3 дня назад) <Vol Zhdanov>
+    f9a507c - dts: msm8998: do warm reset on power button press (4 дня назад) <Demon Singur>
+    04e9b0e - Merge github.com:wight554/chiron into android-9.0 (4 дня назад) <andr68rus>
+    b704b35 - dts: xiaomi: msm8998: update chiron batterydata (4 дня назад) <Vol Zhdanov>
+    2dd90d9 - Merge tag 'v4.4.158' into pie (4 дня назад) <Vol Zhdanov>
+
+ * system/bt
+
+    a3762e8 - Merge "Fix for Bluetooth device name is resetting to default name after reboot" into android-9.0 (4 дня назад) <Max Weninger>
+
+ * vendor/omni
+
+    4ebaffe - omni: overlay: set default qs_header_tile_margin_horizontal to 13dp (4 дня назад) <maxwen>
+
+ * vendor/xiaomi
+
+    2220e6b - Merge github.com:wight554/vendor_xiaomi into android-9.0 (4 дня назад) <andr68rus>
 
  ======================
   ChangeLog 09-26-2018
  ======================
 
+ * device/xiaomi/chiron
+
+    77c4bd3 - overlay: set proper battery capacity in power profile (5 дней назад) <Vol Zhdanov>
+    6054451 - sagit: add stock power profile (5 дней назад) <xiaobai>
+    9c339b8 - overlay: adjust rounded corners overlays (5 дней назад) <Wight554>
+
  * device/xiaomi/msm8998-common
 
-    8d19c2c - msm8998-common: use kryo (2 дня назад) <andr68rus>
-    a328138 - msm8998-common: restore controversial hwcomposer property (2 дня назад) <Vol Zhdanov>
+    8d19c2c - msm8998-common: use kryo (5 дней назад) <andr68rus>
+    a328138 - msm8998-common: restore controversial hwcomposer property (5 дней назад) <Vol Zhdanov>
 
  * frameworks/base
 
-    7e29309 - [1/2] base: add config to disable recent task visibility filter (2 дня назад) <maxwen>
-    c8d1113 - base: SystemUI: fix height of old data type icons (2 дня назад) <maxwen>
-    d063a24 - [1/2] Add a whitelist for location providers outside of /system (2 дня назад) <oshmoun>
-    18643c6 - core: Add support for MicroG (2 дня назад) <gudenau>
-    c80a81a - base: SystemUI: use uniform bg color in power menu (2 дня назад) <maxwen>
+    7e29309 - [1/2] base: add config to disable recent task visibility filter (4 дня назад) <maxwen>
+    c8d1113 - base: SystemUI: fix height of old data type icons (5 дней назад) <maxwen>
+    d063a24 - [1/2] Add a whitelist for location providers outside of /system (5 дней назад) <oshmoun>
+    18643c6 - core: Add support for MicroG (5 дней назад) <gudenau>
+    c80a81a - base: SystemUI: use uniform bg color in power menu (5 дней назад) <maxwen>
 
  * kernel/xiaomi/msm8998
 
-    2dd90d9 - Merge tag 'v4.4.158' into pie (25 часов назад) <Vol Zhdanov>
-    9fbcdd1 - Linux 4.4.158 (26 часов назад) <Greg Kroah-Hartman>
-    262ea6c - MIPS: VDSO: Match data page cache colouring when D$ aliases (26 часов назад) <Paul Burton>
-    30eee1c - drivers: net: cpsw: fix segfault in case of bad phy-handle (26 часов назад) <David Rivshin>
-    24328b8 - mei: bus: type promotion bug in mei_nfc_if_version() (26 часов назад) <Dan Carpenter>
-    8b97b2e - USB: serial: ti_usb_3410_5052: fix array underflow in completion handler (26 часов назад) <Johan Hovold>
-    86312d5 - pinctrl: qcom: spmi-gpio: Fix pmic_gpio_config_get() to be compliant (26 часов назад) <Douglas Anderson>
-    4951eb4 - drm/panel: type promotion bug in s6e8aa0_read_mtp_id() (26 часов назад) <Dan Carpenter>
-    5f5ea78 - selftest: timers: Tweak raw_skew to SKIP when ADJ_OFFSET/other clock adjustments are in progress (26 часов назад) <John Stultz>
-    e573a98 - ALSA: pcm: Fix snd_interval_refine first/last with open min/max (26 часов назад) <Timo Wischer>
-    5e19247 - rtc: bq4802: add error handling for devm_ioremap (26 часов назад) <Zhouyang Jia>
-    c862b38 - drm/amdkfd: Fix error codes in kfd_get_process (26 часов назад) <Wei Lu>
-    785cb2b - gpiolib: Mark gpio_suffixes array with __maybe_unused (26 часов назад) <Andy Shevchenko>
-    2e1c096 - coresight: tpiu: Fix disabling timeouts (26 часов назад) <Robin Murphy>
-    bfb2cbf - coresight: Handle errors in finding input/output ports (26 часов назад) <Suzuki K Poulose>
-    05925d7 - parport: sunbpp: fix error return code (26 часов назад) <Julia Lawall>
-    eddbab9 - drm/nouveau: tegra: Detach from ARM DMA/IOMMU mapping (26 часов назад) <Thierry Reding>
-    f615d18 - ARM: hisi: check of_iomap and fix missing of_node_put (26 часов назад) <Nicholas Mc Guire>
-    eafee07 - ARM: hisi: fix error handling and missing of_node_put (26 часов назад) <Nicholas Mc Guire>
-    96d4584 - ARM: hisi: handle of_iomap and fix missing of_node_put (26 часов назад) <Nicholas Mc Guire>
-    f13ad77 - MIPS: loongson64: cs5536: Fix PCI_OHCI_INT_REG reads (26 часов назад) <Paul Burton>
-    1533250 - mtdchar: fix overflows in adjustment of `count` (26 часов назад) <Jann Horn>
-    20d6cff - audit: fix use-after-free in audit_add_watch (26 часов назад) <Ronny Chevalier>
-    0b726a4 - binfmt_elf: Respect error return from `regset->active' (26 часов назад) <Maciej W. Rozycki>
-    74fb468 - CIFS: fix wrapping bugs in num_entries() (26 часов назад) <Dan Carpenter>
-    2d36319 - cifs: prevent integer overflow in nxt_dir_entry() (26 часов назад) <Dan Carpenter>
-    b8b53ad - usb: cdc-wdm: Fix a sleep-in-atomic-context bug in service_outstanding_interrupt() (26 часов назад) <Jia-Ju Bai>
-    4be36bc - USB: yurex: Fix buffer over-read in yurex_write() (26 часов назад) <Ben Hutchings>
-    b214cde - usb: misc: uss720: Fix two sleep-in-atomic-context bugs (26 часов назад) <Jia-Ju Bai>
-    403c5c2 - USB: serial: io_ti: fix array underflow in completion handler (26 часов назад) <Johan Hovold>
-    f409f34 - USB: net2280: Fix erroneous synchronization change (26 часов назад) <Alan Stern>
-    34f1df0 - USB: add quirk for WORLDE Controller KS49 or Prodipe MIDI 49C USB controller (26 часов назад) <Maxence Duprès>
-    637acc7 - usb: host: u132-hcd: Fix a sleep-in-atomic-context bug in u132_get_frame() (26 часов назад) <Jia-Ju Bai>
-    35bcdf4 - usb: Avoid use-after-free by flushing endpoints early in usb_set_interface() (26 часов назад) <Mathias Nyman>
-    49c05a0 - USB: Add quirk to support DJI CineSSD (26 часов назад) <Tim Anderson>
-    c343fc8 - usb: Don't die twice if PCI xhci host is not responding in resume (26 часов назад) <Mathias Nyman>
-    68fe884 - misc: hmc6352: fix potential Spectre v1 (26 часов назад) <Gustavo A. R. Silva>
-    c527796 - Tools: hv: Fix a bug in the key delete code (26 часов назад) <K. Y. Srinivasan>
-    ee4d1a3 - IB/ipoib: Avoid a race condition between start_xmit and cm_rep_handler (26 часов назад) <Aaron Knister>
-    a739cb3 - xen/netfront: fix waiting for xenbus state change (26 часов назад) <Juergen Gross>
-    1cd01db - pstore: Fix incorrect persistent ram buffer mapping (26 часов назад) <Bin Yang>
-    07c63fd - RDMA/cma: Protect cma dev list with lock (26 часов назад) <Parav Pandit>
-    12c3ba1 - xen-netfront: fix warn message as irq device name has '/' (26 часов назад) <Xiao Liang>
-    7150120 - crypto: sharah - Unregister correct algorithms for SAHARA 3 (26 часов назад) <Michael Müller>
-    da189eb - platform/x86: toshiba_acpi: Fix defined but not used build warnings (26 часов назад) <Randy Dunlap>
-    a4b8132 - s390/qeth: reset layer2 attribute on layer switch (26 часов назад) <Julian Wiedmann>
-    2916249 - s390/qeth: fix race in used-buffer accounting (26 часов назад) <Julian Wiedmann>
-    4f3381a - arm64: dts: qcom: db410c: Fix Bluetooth LED trigger (26 часов назад) <Loic Poulain>
-    2e0c018 - xen-netfront: fix queue name setting (26 часов назад) <Vitaly Kuznetsov>
-    7733207 - mac80211: restrict delayed tailroom needed decrement (26 часов назад) <Manikanta Pubbisetty>
-    2ca7b66 - MIPS: jz4740: Bump zload address (26 часов назад) <Paul Cercueil>
-    8e8c3ba - powerpc/powernv: opal_put_chars partial write fix (26 часов назад) <Nicholas Piggin>
-    d4aa4e4 - perf powerpc: Fix callchain ip filtering (26 часов назад) <Sandipan Das>
-    016353e - ARM: exynos: Clear global variable on init error path (26 часов назад) <Krzysztof Kozlowski>
-    57a1dd7 - fbdev: Distinguish between interlaced and progressive modes (26 часов назад) <Fredrik Noring>
-    e71975f - perf powerpc: Fix callchain ip filtering when return address is in a register (26 часов назад) <Sandipan Das>
-    5a85c8d - fbdev/via: fix defined but not used warning (26 часов назад) <Randy Dunlap>
-    1401b76 - video: goldfishfb: fix memory leak on driver remove (26 часов назад) <Anton Vasilyev>
-    98c05956 - fbdev: omapfb: off by one in omapfb_register_client() (26 часов назад) <Dan Carpenter>
-    66e32b7 - mtd/maps: fix solutionengine.c printk format warnings (26 часов назад) <Randy Dunlap>
-    0eda747 - media: videobuf2-core: check for q->error in vb2_core_qbuf() (26 часов назад) <Hans Verkuil>
-    9f6d6fb - MIPS: ath79: fix system restart (26 часов назад) <Felix Fietkau>
-    46c66ac - dmaengine: pl330: fix irq race with terminate_all (26 часов назад) <John Keeping>
-    d6ac46c - kbuild: add .DELETE_ON_ERROR special target (26 часов назад) <Masahiro Yamada>
-    210006e - clk: imx6ul: fix missing of_node_put() (26 часов назад) <Nicholas Mc Guire>
-    9e8d585 - gfs2: Special-case rindex for gfs2_grow (26 часов назад) <Andreas Gruenbacher>
-    1e89472 - xfrm: fix 'passing zero to ERR_PTR()' warning (26 часов назад) <YueHaibing>
-    650ca59 - ALSA: usb-audio: Fix multiple definitions in AU0828_DEVICE() macro (26 часов назад) <Takashi Iwai>
-    5df13ba - ALSA: msnd: Fix the default sample sizes (26 часов назад) <Takashi Iwai>
-    a8323a8 - iommu/arm-smmu-v3: sync the OVACKFLG to PRIQ consumer register (26 часов назад) <Miao Zhong>
+    9fbcdd1 - Linux 4.4.158 (4 дня назад) <Greg Kroah-Hartman>
+    262ea6c - MIPS: VDSO: Match data page cache colouring when D$ aliases (4 дня назад) <Paul Burton>
+    30eee1c - drivers: net: cpsw: fix segfault in case of bad phy-handle (4 дня назад) <David Rivshin>
+    24328b8 - mei: bus: type promotion bug in mei_nfc_if_version() (4 дня назад) <Dan Carpenter>
+    8b97b2e - USB: serial: ti_usb_3410_5052: fix array underflow in completion handler (4 дня назад) <Johan Hovold>
+    86312d5 - pinctrl: qcom: spmi-gpio: Fix pmic_gpio_config_get() to be compliant (4 дня назад) <Douglas Anderson>
+    4951eb4 - drm/panel: type promotion bug in s6e8aa0_read_mtp_id() (4 дня назад) <Dan Carpenter>
+    5f5ea78 - selftest: timers: Tweak raw_skew to SKIP when ADJ_OFFSET/other clock adjustments are in progress (4 дня назад) <John Stultz>
+    e573a98 - ALSA: pcm: Fix snd_interval_refine first/last with open min/max (4 дня назад) <Timo Wischer>
+    5e19247 - rtc: bq4802: add error handling for devm_ioremap (4 дня назад) <Zhouyang Jia>
+    c862b38 - drm/amdkfd: Fix error codes in kfd_get_process (4 дня назад) <Wei Lu>
+    785cb2b - gpiolib: Mark gpio_suffixes array with __maybe_unused (4 дня назад) <Andy Shevchenko>
+    2e1c096 - coresight: tpiu: Fix disabling timeouts (4 дня назад) <Robin Murphy>
+    bfb2cbf - coresight: Handle errors in finding input/output ports (4 дня назад) <Suzuki K Poulose>
+    05925d7 - parport: sunbpp: fix error return code (4 дня назад) <Julia Lawall>
+    eddbab9 - drm/nouveau: tegra: Detach from ARM DMA/IOMMU mapping (4 дня назад) <Thierry Reding>
+    f615d18 - ARM: hisi: check of_iomap and fix missing of_node_put (4 дня назад) <Nicholas Mc Guire>
+    eafee07 - ARM: hisi: fix error handling and missing of_node_put (4 дня назад) <Nicholas Mc Guire>
+    96d4584 - ARM: hisi: handle of_iomap and fix missing of_node_put (4 дня назад) <Nicholas Mc Guire>
+    f13ad77 - MIPS: loongson64: cs5536: Fix PCI_OHCI_INT_REG reads (4 дня назад) <Paul Burton>
+    1533250 - mtdchar: fix overflows in adjustment of `count` (4 дня назад) <Jann Horn>
+    20d6cff - audit: fix use-after-free in audit_add_watch (4 дня назад) <Ronny Chevalier>
+    0b726a4 - binfmt_elf: Respect error return from `regset->active' (4 дня назад) <Maciej W. Rozycki>
+    74fb468 - CIFS: fix wrapping bugs in num_entries() (4 дня назад) <Dan Carpenter>
+    2d36319 - cifs: prevent integer overflow in nxt_dir_entry() (4 дня назад) <Dan Carpenter>
+    b8b53ad - usb: cdc-wdm: Fix a sleep-in-atomic-context bug in service_outstanding_interrupt() (4 дня назад) <Jia-Ju Bai>
+    4be36bc - USB: yurex: Fix buffer over-read in yurex_write() (4 дня назад) <Ben Hutchings>
+    b214cde - usb: misc: uss720: Fix two sleep-in-atomic-context bugs (4 дня назад) <Jia-Ju Bai>
+    403c5c2 - USB: serial: io_ti: fix array underflow in completion handler (4 дня назад) <Johan Hovold>
+    f409f34 - USB: net2280: Fix erroneous synchronization change (4 дня назад) <Alan Stern>
+    34f1df0 - USB: add quirk for WORLDE Controller KS49 or Prodipe MIDI 49C USB controller (4 дня назад) <Maxence Duprès>
+    637acc7 - usb: host: u132-hcd: Fix a sleep-in-atomic-context bug in u132_get_frame() (4 дня назад) <Jia-Ju Bai>
+    35bcdf4 - usb: Avoid use-after-free by flushing endpoints early in usb_set_interface() (4 дня назад) <Mathias Nyman>
+    49c05a0 - USB: Add quirk to support DJI CineSSD (4 дня назад) <Tim Anderson>
+    c343fc8 - usb: Don't die twice if PCI xhci host is not responding in resume (4 дня назад) <Mathias Nyman>
+    68fe884 - misc: hmc6352: fix potential Spectre v1 (4 дня назад) <Gustavo A. R. Silva>
+    c527796 - Tools: hv: Fix a bug in the key delete code (4 дня назад) <K. Y. Srinivasan>
+    ee4d1a3 - IB/ipoib: Avoid a race condition between start_xmit and cm_rep_handler (4 дня назад) <Aaron Knister>
+    a739cb3 - xen/netfront: fix waiting for xenbus state change (4 дня назад) <Juergen Gross>
+    1cd01db - pstore: Fix incorrect persistent ram buffer mapping (4 дня назад) <Bin Yang>
+    07c63fd - RDMA/cma: Protect cma dev list with lock (4 дня назад) <Parav Pandit>
+    12c3ba1 - xen-netfront: fix warn message as irq device name has '/' (4 дня назад) <Xiao Liang>
+    7150120 - crypto: sharah - Unregister correct algorithms for SAHARA 3 (4 дня назад) <Michael Müller>
+    da189eb - platform/x86: toshiba_acpi: Fix defined but not used build warnings (4 дня назад) <Randy Dunlap>
+    a4b8132 - s390/qeth: reset layer2 attribute on layer switch (4 дня назад) <Julian Wiedmann>
+    2916249 - s390/qeth: fix race in used-buffer accounting (4 дня назад) <Julian Wiedmann>
+    4f3381a - arm64: dts: qcom: db410c: Fix Bluetooth LED trigger (4 дня назад) <Loic Poulain>
+    2e0c018 - xen-netfront: fix queue name setting (4 дня назад) <Vitaly Kuznetsov>
+    7733207 - mac80211: restrict delayed tailroom needed decrement (4 дня назад) <Manikanta Pubbisetty>
+    2ca7b66 - MIPS: jz4740: Bump zload address (4 дня назад) <Paul Cercueil>
+    8e8c3ba - powerpc/powernv: opal_put_chars partial write fix (4 дня назад) <Nicholas Piggin>
+    d4aa4e4 - perf powerpc: Fix callchain ip filtering (4 дня назад) <Sandipan Das>
+    016353e - ARM: exynos: Clear global variable on init error path (4 дня назад) <Krzysztof Kozlowski>
+    57a1dd7 - fbdev: Distinguish between interlaced and progressive modes (4 дня назад) <Fredrik Noring>
+    e71975f - perf powerpc: Fix callchain ip filtering when return address is in a register (4 дня назад) <Sandipan Das>
+    5a85c8d - fbdev/via: fix defined but not used warning (4 дня назад) <Randy Dunlap>
+    1401b76 - video: goldfishfb: fix memory leak on driver remove (4 дня назад) <Anton Vasilyev>
+    98c05956 - fbdev: omapfb: off by one in omapfb_register_client() (4 дня назад) <Dan Carpenter>
+    66e32b7 - mtd/maps: fix solutionengine.c printk format warnings (4 дня назад) <Randy Dunlap>
+    0eda747 - media: videobuf2-core: check for q->error in vb2_core_qbuf() (4 дня назад) <Hans Verkuil>
+    9f6d6fb - MIPS: ath79: fix system restart (4 дня назад) <Felix Fietkau>
+    46c66ac - dmaengine: pl330: fix irq race with terminate_all (4 дня назад) <John Keeping>
+    d6ac46c - kbuild: add .DELETE_ON_ERROR special target (4 дня назад) <Masahiro Yamada>
+    210006e - clk: imx6ul: fix missing of_node_put() (4 дня назад) <Nicholas Mc Guire>
+    9e8d585 - gfs2: Special-case rindex for gfs2_grow (4 дня назад) <Andreas Gruenbacher>
+    1e89472 - xfrm: fix 'passing zero to ERR_PTR()' warning (4 дня назад) <YueHaibing>
+    650ca59 - ALSA: usb-audio: Fix multiple definitions in AU0828_DEVICE() macro (4 дня назад) <Takashi Iwai>
+    5df13ba - ALSA: msnd: Fix the default sample sizes (4 дня назад) <Takashi Iwai>
+    a8323a8 - iommu/arm-smmu-v3: sync the OVACKFLG to PRIQ consumer register (4 дня назад) <Miao Zhong>
 
- ======================
-  ChangeLog 09-25-2018
- ======================
+ * system/bt
 
- * device/xiaomi/msm8998-common
-
-    780a18d - msm8998-common: proprietary-files: update sha1sum for ims.apk (2 дня назад) <andr68rus>
-    13016c3 - msm8998-common: Remove vsync phase offset configuration (3 дня назад) <Wang Han>
-    8fceb8d - msm8998-common: configs: nfc: import wahoo nfc logging values (3 дня назад) <Vol Zhdanov>
-    e794413 - msm8998-common: configs: gps: update from latest miui stable (3 дня назад) <Vol Zhdanov>
-    a3e1bc4 - Revert "msm8998-common: nfc: Reduce log" (3 дня назад) <Vol Zhdanov>
-    2616b59 - msm8998-common: update audio flags (3 дня назад) <andr68rus>
-
- * frameworks/base
-
-    fb75449 - base: SystemUI: fix status bar mobile view layout problem (3 дня назад) <maxwen>
-    080a862 - [1/2] base: config to disable power menu on secure lock screen (3 дня назад) <maxwen>
-    e9052f9 - base: SystemUI: delete deprecated status bar view (3 дня назад) <maxwen>
-
- * hardware/qcom/bt
-
-    c855210 - bt: bring back bt_nv handling (3 дня назад) <Marko Man>
-
- * kernel/xiaomi/msm8998
-
-    ef9ec88 - {chiron,sagit}_defconfig: disable compat VDSO support (3 дня назад) <andr68rus>
-
- * packages/apps/Dialer
-
-    93b90a5 - PoorManTheme: fix log cards bg (3 дня назад) <Marko Man>
-
- * packages/apps/OmniGears
-
-    d46ec01 - [2/2] OmniGears: add config to disable recent task visibility filter (3 дня назад) <maxwen>
-    9f775b1 - [2/2] OmniGears: config to disable power menu on secure lock screen (3 дня назад) <maxwen>
-
- * vendor/omni
-
-    d1b0d9f - overlay: set config_activeTaskDurationHours to 12h (3 дня назад) <maxwen>
-
- * vendor/xiaomi
-
-    13fdd53 - msm8998-common: update ims.apk from Dp5_P_Semi_GSI_VoLTE_fix (2 дня назад) <andr68rus>
-    d34db80 - Revert "chiron: use qdcm calibration from polaris" (3 дня назад) <Vol Zhdanov>
-
- ======================
-  ChangeLog 09-24-2018
- ======================
-
- * device/qcom/sepolicy
-
-    f57773f - sepolicy: Fix ` breakage (3 дня назад) <Rashed Abdel-Tawab>
-
- * device/xiaomi/msm8998-common
-
-    9285974 - msm8998-common: use stock msm_irqbalance config (4 дня назад) <Vol Zhdanov>
-    84d1ac1 - msm8998-common: use stock msm_irqbalance (4 дня назад) <Vol Zhdanov>
-    07bf09f - msm8998-common: update media stack from LA.UM.7.2.r1-03600-sdm660.0 (4 дня назад) <Vol Zhdanov>
-    edd954f - msm8998-common: battery learned capacity: backup/restore to/from persist data (4 дня назад) <Jack Wu>
-    897d08c - msm8998-common: add health@2.0 HAL and cycle count backup/restore (4 дня назад) <Thierry Strudel>
-
- * hardware/qcom/audio-caf-msm8998
-
-    a1471a0 - msm8998: hal: Update ultrasound route hacks (3 дня назад) <Demon Singur>
-    16599ae - msm8998: ultrasound: Initial open source hal for Elliptic Ultrasound (3 дня назад) <Balázs Triszka>
-
- * hardware/qcom/bt
-
-    19ab9c6 - import caf-msm8998  LA.UM.7.4.r1-03000-8x98.0 (3 дня назад) <Marko Man>
-
- * kernel/xiaomi/msm8998
-
-    5c47591 - scsi: ufs: add debugfs node that dumps health desc (4 дня назад) <Maggie White>
-    c7798c79 - power: qpnp-fg-gen3: make CHARGE_FULL property writable by user (4 дня назад) <Jack Wu>
-    31bd215 - qpnp: fg+smb-lib: implement Linux cycle count (4 дня назад) <Thierry Strudel>
-    6fee88e - qpnp-fg-gen3: add cycle_counts_bins device driver attribute (4 дня назад) <Ted Lin>
-
- * vendor/xiaomi
-
-    b97e121 - Revert "chiron: use qdcm calibration from polaris" (3 дня назад) <andr68rus>
-    88b424f - msm8998-common: use stock msm_irqbalance (4 дня назад) <Vol Zhdanov>
-    03332d4 - msm8998-common: use blobs from MIUI Stable V10.0.2.0 (4 дня назад) <Vol Zhdanov>
-    8708e9a - msm8998-common: update media stack from LA.UM.7.2.r1-03600-sdm660.0 (4 дня назад) <Vol Zhdanov>
-
- ======================
-  ChangeLog 09-23-2018
- ======================
-
- * device/xiaomi/msm8998-common
-
-    8a9b941 - sepolicy: remove neverallow (4 дня назад) <andr68rus>
-    97b46f9 - [temp] add some picks from gerrit to bringup (5 дней назад) <andr68rus>
-    90bc270 - Merge github.com:wight554/device_xiaomi_msm8998-common into android-9.0 (5 дней назад) <andr68rus>
-    ac1c042 - msm8998-common: De-duplicate cpuset configuration (5 дней назад) <Wang Han>
-    58968cb - msm8998-common: remove unused perf props (5 дней назад) <Vol Zhdanov>
-    a8615e0 - msm8998-common: update display props for a new hal (5 дней назад) <Vol Zhdanov>
-    b376cc9 - msm8998-common: Disable sdm rotator downscaler (5 дней назад) <Jorim Jaggi>
-
- * packages/apps/Gallery2
-
-    c6e265e - Gallery2: some eye candy for pie (5 дней назад) <maxwen>
-
- * packages/apps/SnapdragonCamera2
-
-    f1b5013 - SnapdragonCamera2: fix record location (5 дней назад) <maxwen>
+    5ea4419 - Fix for Bluetooth device name is resetting to default name after reboot (5 дней назад) <Aiswarya Cyriac>
 
