@@ -1,43 +1,59 @@
  ======================
-  ChangeLog 10-13-2018
+  ChangeLog 10-14-2018
  ======================
 
  * frameworks/base
 
-    e28e53c - Revert "Remove getIntWithSubId in TelephonyManager." (39 секунд назад) <jhenrique09>
-    e044341 - Stop invoke initAppOps in Camera default constructor. (49 секунд назад) <Daichi Hirono>
-    b18bf03 - Merge "[1/2] base: power: custom button light" into android-9.0 (2 часа назад) <Max Weninger>
-    ed35240 - Default the network location provider to none (3 часа назад) <Luca Stefani>
-    6011472 - combo issue when location reported by providers do not come with extras (3 часа назад) <Kevin Tang>
-    658097e - Revert "SystemUI: use fp MODE_UNLOCK when pulsing or aod" (3 часа назад) <Marko Man>
-    975a75d - [1/2] base: power: custom button light (3 часа назад) <maxwen>
-    f4c2b9e - NLP Combo feature (8 часов назад) <Dante Russo>
+    2f1706f - Revert "Remove getIntWithSubId in TelephonyManager." (38 секунд назад) <jhenrique09>
+    012e9b8 - Stop invoke initAppOps in Camera default constructor. (47 секунд назад) <Daichi Hirono>
 
  * hardware/interfaces
 
-    cda8821 - wifi: Add logic to create secondary interface for STA mode too. (30 секунд назад) <Purushottam Kushwaha>
-    5a6dfff - wifi: Add provision to create/remove dynamic interface(s). (31 секунду назад) <Purushottam Kushwaha>
-    c658988 - wifi: Fetch softap interface name for creating ap_iface operations. (32 секунды назад) <Purushottam Kushwaha>
+    ee2baff - wifi: Add logic to create secondary interface for STA mode too. (30 секунд назад) <Purushottam Kushwaha>
+    32c9b01 - wifi: Add provision to create/remove dynamic interface(s). (31 секунду назад) <Purushottam Kushwaha>
+    7dccd28 - wifi: Fetch softap interface name for creating ap_iface operations. (32 секунды назад) <Purushottam Kushwaha>
 
  * hardware/libhardware_legacy
 
-    a04777e - Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal (29 секунд назад) <Purushottam Kushwaha>
+    9d77db3 - Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal (29 секунд назад) <Purushottam Kushwaha>
 
  * hardware/qcom/wlan
 
-    0211ad9 - Wifi-Hal: Provide support to create/remove wifi interfaces. (33 секунды назад) <Purushottam Kushwaha>
+    4c9d855 - Wifi-Hal: Provide support to create/remove wifi interfaces. (34 секунды назад) <Purushottam Kushwaha>
 
  * hardware/ril
 
-    16cf4e7 - libril: network selection fix (44 секунды назад) <faust93>
+    06e5334 - libril: network selection fix (43 секунды назад) <faust93>
 
  * packages/apps/Dialer
 
-    186f75e - Control dialer's incoming call proximity sensor check via an overlay (57 секунд назад) <blunden>
+    a40194f - Control dialer's incoming call proximity sensor check via an overlay (56 секунд назад) <blunden>
+
+ ======================
+  ChangeLog 10-13-2018
+ ======================
+
+ * frameworks/av
+
+    788fd9a - av: camera: catch mad hals that mess up buffer time (26 часов назад) <maxwen>
+
+ * frameworks/base
+
+    33369c2 - base: Fix CPU info overlay text layout (26 часов назад) <Stefan Berger>
+    18d2bcb - base: Bring back CPU temperature to CPU info overlay (26 часов назад) <Stefan Berger>
+    3fc3166 - base: add CPU info overlay (26 часов назад) <maxwen>
+    005d3a4 - base: move nlp combo config to custom (26 часов назад) <maxwen>
+    b18bf03 - Merge "[1/2] base: power: custom button light" into android-9.0 (26 часов назад) <Max Weninger>
+    ed35240 - Default the network location provider to none (27 часов назад) <Luca Stefani>
+    6011472 - combo issue when location reported by providers do not come with extras (27 часов назад) <Kevin Tang>
+    658097e - Revert "SystemUI: use fp MODE_UNLOCK when pulsing or aod" (27 часов назад) <Marko Man>
+    975a75d - [1/2] base: power: custom button light (27 часов назад) <maxwen>
+    f4c2b9e - NLP Combo feature (32 часа назад) <Dante Russo>
 
  * packages/apps/OmniGears
 
-    e9bc731 - [2/2] OmniGears: custom button light (11 часов назад) <maxwen>
+    9f4a478 - [2/2] Add back Cpu Info overlay (35 часов назад) <Marko Man>
+    e9bc731 - [2/2] OmniGears: custom button light (35 часов назад) <maxwen>
 
  ======================
   ChangeLog 10-12-2018
@@ -45,11 +61,11 @@
 
  * bionic
 
-    bd797cb - linker: Add support for dynamic SHIM libraries (2 дня назад) <Adrian DC>
+    bd797cb - linker: Add support for dynamic SHIM libraries (3 дня назад) <Adrian DC>
 
  * device/xiaomi/sagit
 
-    fb27e61 - sagit: omni-fy overlays (2 дня назад) <andr68rus>
+    fb27e61 - sagit: omni-fy overlays (3 дня назад) <andr68rus>
 
  ======================
   ChangeLog 10-11-2018
@@ -57,7 +73,7 @@
 
  * packages/apps/Settings
 
-    a6ebe81 - Settings: add back ButtonBrightnessSettings fragment (2 дня назад) <andr68rus>
+    a6ebe81 - Settings: add back ButtonBrightnessSettings fragment (3 дня назад) <andr68rus>
 
  ======================
   ChangeLog 10-10-2018
@@ -65,29 +81,9 @@
 
  * build/make
 
-    52fa332 - [1/2] core: Change vendor init flag to boolean (3 дня назад) <Stefan Berger>
+    52fa332 - [1/2] core: Change vendor init flag to boolean (4 дня назад) <Stefan Berger>
 
  * build/soong
 
-    e26f8ea - [2/2] soong: Change vendor init flag to boolean (3 дня назад) <Stefan Berger>
-
- ======================
-  ChangeLog 10-09-2018
- ======================
-
- * build/make
-
-    523f8c5 - [1/3] build: Move vendor init flag to soong (5 дней назад) <Stefan Berger>
-
- * build/soong
-
-    86632f5 - [2/3] soong: Move vendor init flag to soong (5 дней назад) <Stefan Berger>
-
- * hardware/qcom/bt
-
-    6702144 - caf-msm8952: Fix libbt-vendor build errors (5 дней назад) <Stefan Berger>
-
- * system/core
-
-    73ec138 - [3/3] core: Move vendor init flag to soong (5 дней назад) <Stefan Berger>
+    e26f8ea - [2/2] soong: Change vendor init flag to boolean (4 дня назад) <Stefan Berger>
 
