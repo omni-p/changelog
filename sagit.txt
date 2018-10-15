@@ -4,78 +4,86 @@
 
  * device/xiaomi/chiron
 
-    30ae487 - chiron: Update power profile for P (16 минут назад) <Bruno Martins>
-    87a0839 - chrion: inherit proper telephony config (16 минут назад) <Vol Zhdanov>
-    500d456 - chiron: add prebuilt pixel launcher (16 минут назад) <Vol Zhdanov>
-    2c32d5f - chiron: add prebuilt miui camera (18 минут назад) <Vol Zhdanov>
-    5efbf38 - chiron: import fp idc configs (19 минут назад) <Vol Zhdanov>
-    ac617f6 - [temp] disable deps, use manifest (30 минут назад) <andr68rus>
+    30ae487 - chiron: Update power profile for P (69 минут назад) <Bruno Martins>
+    87a0839 - chrion: inherit proper telephony config (69 минут назад) <Vol Zhdanov>
+    500d456 - chiron: add prebuilt pixel launcher (70 минут назад) <Vol Zhdanov>
+    2c32d5f - chiron: add prebuilt miui camera (71 минуту назад) <Vol Zhdanov>
+    5efbf38 - chiron: import fp idc configs (72 минуты назад) <Vol Zhdanov>
+    ac617f6 - [temp] disable deps, use manifest (83 минуты назад) <andr68rus>
 
  * device/xiaomi/msm8998-common
 
-    2dfc71a - Merge https://github.com/wight554/device_xiaomi_msm8998-common into android-9.0 (13 минут назад) <andr68rus>
-    ed43956 - [temp] disable deps, use manifest (29 минут назад) <andr68rus>
-    c076716 - Revert "msm8998-common: Remove vsync phase offset configuration" (7 часов назад) <Vol Zhdanov>
+    2dfc71a - Merge https://github.com/wight554/device_xiaomi_msm8998-common into android-9.0 (66 минут назад) <andr68rus>
+    ed43956 - [temp] disable deps, use manifest (83 минуты назад) <andr68rus>
+    c076716 - Revert "msm8998-common: Remove vsync phase offset configuration" (8 часов назад) <Vol Zhdanov>
 
  * device/xiaomi/sagit
 
-    e1fc4e2 - [temp] disable deps, use manifest (29 минут назад) <andr68rus>
+    e1fc4e2 - [temp] disable deps, use manifest (82 минуты назад) <andr68rus>
 
  * frameworks/base
 
-    6bc6b35 - Revert "Remove getIntWithSubId in TelephonyManager." (26 секунд назад) <jhenrique09>
-    6356940 - Stop invoke initAppOps in Camera default constructor. (38 секунд назад) <Daichi Hirono>
-    ca03011 - WifiDisplayController: handle preexisting p2p connection status (2 часа назад) <Li Sun>
-    d8953ee - WiFiDisplayController: Defer the P2P Initialization from its constructor. (2 часа назад) <Purushottam Kushwaha>
-    e73470c - Merge changes for launching wifidisplay from system settings (2 часа назад) <Indranil Chakraborty>
-    6486692 - display: Add support for multiple displays. (2 часа назад) <Dileep Marchya>
+    cbd0152 - Revert "Remove getIntWithSubId in TelephonyManager." (34 секунды назад) <jhenrique09>
+    fd02868 - Stop invoke initAppOps in Camera default constructor. (48 секунд назад) <Daichi Hirono>
+    ca03011 - WifiDisplayController: handle preexisting p2p connection status (3 часа назад) <Li Sun>
+    d8953ee - WiFiDisplayController: Defer the P2P Initialization from its constructor. (3 часа назад) <Purushottam Kushwaha>
+    e73470c - Merge changes for launching wifidisplay from system settings (3 часа назад) <Indranil Chakraborty>
+    6486692 - display: Add support for multiple displays. (3 часа назад) <Dileep Marchya>
 
  * frameworks/native
 
-    1df7b71 - sf: Add support for multiple displays (2 часа назад) <Pullakavi Srinivas>
+    1df7b71 - sf: Add support for multiple displays (3 часа назад) <Pullakavi Srinivas>
 
  * hardware/interfaces
 
-    cef52ac - wifi: Add logic to create secondary interface for STA mode too. (18 секунд назад) <Purushottam Kushwaha>
-    0294fab - wifi: Add provision to create/remove dynamic interface(s). (19 секунд назад) <Purushottam Kushwaha>
-    2c92e75 - wifi: Fetch softap interface name for creating ap_iface operations. (20 секунд назад) <Purushottam Kushwaha>
+    db50944 - wifi: Add logic to create secondary interface for STA mode too. (23 секунды назад) <Purushottam Kushwaha>
+    324eee9 - wifi: Add provision to create/remove dynamic interface(s). (25 секунд назад) <Purushottam Kushwaha>
+    a456197 - wifi: Fetch softap interface name for creating ap_iface operations. (27 секунд назад) <Purushottam Kushwaha>
 
  * hardware/libhardware_legacy
 
-    59a53d8 - Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal (17 секунд назад) <Purushottam Kushwaha>
+    0d17951 - Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal (22 секунды назад) <Purushottam Kushwaha>
+
+ * hardware/qcom/display-caf-msm8996
+
+    f75b598 - Revert "Revert "display: Define soong namespace"" (4 минуты назад) <andr68rus>
+
+ * hardware/qcom/display-caf-msm8998
+
+    eb27a33 - display: Define soong namespace (17 секунд назад) <Rashed Abdel-Tawab>
 
  * hardware/qcom/wlan
 
-    8bf4191 - Wifi-Hal: Provide support to create/remove wifi interfaces. (22 секунды назад) <Purushottam Kushwaha>
+    b577fa5 - Wifi-Hal: Provide support to create/remove wifi interfaces. (29 секунд назад) <Purushottam Kushwaha>
 
  * hardware/ril
 
-    72dc2e0 - libril: network selection fix (34 секунды назад) <faust93>
+    7459289 - libril: network selection fix (42 секунды назад) <faust93>
 
  * kernel/leeco/msm8996
 
-    f48d3af - msm: qpnp-haptic: Process haptics asynchronously (11 часов назад) <Sultanxda>
-    ada8ac6 - msm: qpnp-haptic: set up sysfs interface for common cmhw implementation (11 часов назад) <dianlujitao>
-    171f34e3 - qpnp-haptic: Add sysfs interface to control intensity (11 часов назад) <Willi Ye>
-    5c72188 - config {x2, zl1}: enable CONFIG_SWEEP2SLEEP (11 часов назад) <andr68rus>
-    bf17b23 - sweep2sleep: turn off screen by sweeping over navbar (11 часов назад) <flar2>
+    f48d3af - msm: qpnp-haptic: Process haptics asynchronously (12 часов назад) <Sultanxda>
+    ada8ac6 - msm: qpnp-haptic: set up sysfs interface for common cmhw implementation (12 часов назад) <dianlujitao>
+    171f34e3 - qpnp-haptic: Add sysfs interface to control intensity (12 часов назад) <Willi Ye>
+    5c72188 - config {x2, zl1}: enable CONFIG_SWEEP2SLEEP (12 часов назад) <andr68rus>
+    bf17b23 - sweep2sleep: turn off screen by sweeping over navbar (12 часов назад) <flar2>
     58bf573 - qpnp-haptic: expose vibrate function (12 часов назад) <flar2>
 
  * kernel/xiaomi/msm8998
 
-    b451314 - Merge https://github.com/wight554/chiron into android-9.0 (21 минуту назад) <andr68rus>
-    40fcbf3 - Revert "msm: mdss: Power on display asynchronously as early as possible" (8 часов назад) <Vol Zhdanov>
-    b5b9902 - qca-wifi-host-cmn: Merge tag 'LA.UM.7.4.r1-03600-8x98.0' into pie (8 часов назад) <Vol Zhdanov>
-    7720999 - qcacld-3.0: Merge tag 'LA.UM.7.4.r1-03600-8x98.0' into pie (8 часов назад) <Vol Zhdanov>
-    349969f - fw-api: Merge tag 'LA.UM.7.4.r1-03600-8x98.0' into pie (8 часов назад) <Vol Zhdanov>
+    b451314 - Merge https://github.com/wight554/chiron into android-9.0 (74 минуты назад) <andr68rus>
+    40fcbf3 - Revert "msm: mdss: Power on display asynchronously as early as possible" (9 часов назад) <Vol Zhdanov>
+    b5b9902 - qca-wifi-host-cmn: Merge tag 'LA.UM.7.4.r1-03600-8x98.0' into pie (9 часов назад) <Vol Zhdanov>
+    7720999 - qcacld-3.0: Merge tag 'LA.UM.7.4.r1-03600-8x98.0' into pie (9 часов назад) <Vol Zhdanov>
+    349969f - fw-api: Merge tag 'LA.UM.7.4.r1-03600-8x98.0' into pie (9 часов назад) <Vol Zhdanov>
 
  * packages/apps/Dialer
 
-    7995f22 - Control dialer's incoming call proximity sensor check via an overlay (51 секунду назад) <blunden>
+    f16764a - Control dialer's incoming call proximity sensor check via an overlay (61 секунду назад) <blunden>
 
  * vendor/xiaomi
 
-    52129ac - Merge https://github.com/wight554/vendor_xiaomi into android-9.0 (12 минут назад) <andr68rus>
+    52129ac - Merge https://github.com/wight554/vendor_xiaomi into android-9.0 (65 минут назад) <andr68rus>
 
  ======================
   ChangeLog 10-14-2018
@@ -84,19 +92,10 @@
  * frameworks/base
 
     82dce04 - SystemUI: CpuInfo overlay: bug fixes (2 дня назад) <maxwen>
-    f73242e - ambient display: Fix volume key music control (2 дня назад) <Christopher R. Palmer>
 
  ======================
   ChangeLog 10-13-2018
  ======================
-
- * device/leeco/msm8996-common
-
-    77874dc - msm8996-common: enable soundtrigger, up audio hal to 4.0 thanks @Shiva (3 дня назад) <andr68rus>
-    09b265c - msm8996-common: import healthd from CAF LA.UM.7.5.r1-02500-8x96.0 and up hal to 2.0 (3 дня назад) <andr68rus>
-    eaa1cdf - msm8996-common: config.fs: remove cnss-daemon to fix it start (3 дня назад) <andr68rus>
-    93d30f8 - Revert "msm8996-common: drop cnss_daemon" (3 дня назад) <andr68rus>
-    bb7ad03 - msm8996-common: fix EUI offline-mode charge for omni pack images into ramdisk, remove unneded flags (3 дня назад) <andr68rus>
 
  * device/leeco/x2
 
@@ -118,6 +117,7 @@
 
  * frameworks/base
 
+    f73242e - ambient display: Fix volume key music control (2 дня назад) <Christopher R. Palmer>
     6540c7c - base: Check early if CPU temp is available (3 дня назад) <Stefan Berger>
     36462db - SystemUI: CpuInfo overlay, adjust for modern cpus (3 дня назад) <Marko Man>
     33369c2 - base: Fix CPU info overlay text layout (3 дня назад) <Stefan Berger>
@@ -180,6 +180,11 @@
 
  * device/leeco/msm8996-common
 
+    77874dc - msm8996-common: enable soundtrigger, up audio hal to 4.0 thanks @Shiva (3 дня назад) <andr68rus>
+    09b265c - msm8996-common: import healthd from CAF LA.UM.7.5.r1-02500-8x96.0 and up hal to 2.0 (3 дня назад) <andr68rus>
+    eaa1cdf - msm8996-common: config.fs: remove cnss-daemon to fix it start (3 дня назад) <andr68rus>
+    93d30f8 - Revert "msm8996-common: drop cnss_daemon" (3 дня назад) <andr68rus>
+    bb7ad03 - msm8996-common: fix EUI offline-mode charge for omni pack images into ramdisk, remove unneded flags (3 дня назад) <andr68rus>
     42c2042 - msm8996-common: add LeDoze (3 дня назад) <andr68rus>
     25ef327 - msm8996-common: add LeParts (3 дня назад) <andr68rus>
     2838d5d - msm8996-common: remove lepref (3 дня назад) <andr68rus>
