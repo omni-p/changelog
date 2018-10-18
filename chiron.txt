@@ -1,101 +1,139 @@
  ======================
+  ChangeLog 10-18-2018
+ ======================
+
+ * bionic
+
+    bc3cc11 - [DNM] bionic: hack for pthread mutex bug for old camera blob (35 seconds ago) <LuK1337>
+
+ * build/make
+
+    cb86f11 - build: ota: Support for install tools in /tmp/install (36 seconds ago) <Tom Marshall>
+    a72dca3 - edify: bring back SetPermissionsRecursive (37 seconds ago) <Simon Shields>
+
+ * device/leeco/msm8996-common
+
+    5d9e10d - msm8996-common: disable soundtrigger (15 hours ago) <andr68rus>
+    c91ef71 - msm8996: Remove deprecated doze-related overlays (15 hours ago) <Bruno Martins>
+    d4feda7 - msm8996: update sec_config from CAF (15 hours ago) <ThEMarD>
+    ec04b42 - msm8996-common: Declare PRODUCT_SOONG_NAMESPACES for HALs (15 hours ago) <andr68rus>
+    2a399f1 - msm8996-common: dont blacklist ro.product.model (15 hours ago) <andr68rus>
+
+ * frameworks/base
+
+    78745ba - Stop invoke initAppOps in Camera default constructor. (21 seconds ago) <Daichi Hirono>
+
+ * hardware/interfaces
+
+    e2ad3b2 - wifi: Add logic to create secondary interface for STA mode too. (9 seconds ago) <Purushottam Kushwaha>
+    25a1c64 - wifi: Add provision to create/remove dynamic interface(s). (10 seconds ago) <Purushottam Kushwaha>
+    15ed790 - wifi: Fetch softap interface name for creating ap_iface operations. (12 seconds ago) <Purushottam Kushwaha>
+
+ * hardware/libhardware_legacy
+
+    00d14ef - Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal (8 seconds ago) <Purushottam Kushwaha>
+
+ * hardware/qcom/display-caf-msm8998
+
+    22d7636 - display: Define soong namespace (3 seconds ago) <Rashed Abdel-Tawab>
+
+ * hardware/qcom/wlan
+
+    a92329d - Wifi-Hal: Provide support to create/remove wifi interfaces. (13 seconds ago) <Purushottam Kushwaha>
+
+ * hardware/ril
+
+    37b46a5 - libril: network selection fix (18 seconds ago) <faust93>
+
+ * kernel/leeco/msm8996
+
+    925b4ed - {x2,zl1} config: enable CONFIG_IP_NF_TARGET_TTL (15 hours ago) <andr68rus>
+    5263b11 - qcacld-2.0: Disable CONFIG_WLAN_THERMAL_SHUTDOWN (15 hours ago) <Ivan Grinko>
+
+ * packages/apps/Dialer
+
+    587d691 - Control dialer's incoming call proximity sensor check via an overlay (31 seconds ago) <blunden>
+
+ ======================
+  ChangeLog 10-17-2018
+ ======================
+
+ * device/leeco/msm8996-common
+
+    c85f29a - msm8996-common: LePref: remove s2s, vibrator strength preferences (2 days ago) <andr68rus>
+    e802aa2 - msm8996-common: init: set owner for fastcharge toggle sysfs (2 days ago) <andr68rus>
+
+ * frameworks/base
+
+    6f940bd - Revert "Remove getIntWithSubId in TelephonyManager." (2 days ago) <jhenrique09>
+
+ ======================
   ChangeLog 10-16-2018
  ======================
 
  * device/xiaomi/chiron
 
-    0b3d326 - Revert "chiron: add prebuilt pixel launcher" (18 часов назад) <andr68rus>
-    4279360 - Revert "chrion: inherit proper telephony config" (19 часов назад) <andr68rus>
-    30ae487 - chiron: Update power profile for P (21 час назад) <Bruno Martins>
-    87a0839 - chrion: inherit proper telephony config (21 час назад) <Vol Zhdanov>
-    500d456 - chiron: add prebuilt pixel launcher (21 час назад) <Vol Zhdanov>
-    2c32d5f - chiron: add prebuilt miui camera (21 час назад) <Vol Zhdanov>
-    5efbf38 - chiron: import fp idc configs (21 час назад) <Vol Zhdanov>
-    ac617f6 - [temp] disable deps, use manifest (21 час назад) <andr68rus>
+    0b3d326 - Revert "chiron: add prebuilt pixel launcher" (3 days ago) <andr68rus>
+    4279360 - Revert "chrion: inherit proper telephony config" (3 days ago) <andr68rus>
+    30ae487 - chiron: Update power profile for P (3 days ago) <Bruno Martins>
+    87a0839 - chrion: inherit proper telephony config (3 days ago) <Vol Zhdanov>
+    500d456 - chiron: add prebuilt pixel launcher (3 days ago) <Vol Zhdanov>
+    2c32d5f - chiron: add prebuilt miui camera (3 days ago) <Vol Zhdanov>
+    5efbf38 - chiron: import fp idc configs (3 days ago) <Vol Zhdanov>
+    ac617f6 - [temp] disable deps, use manifest (3 days ago) <andr68rus>
 
  * device/xiaomi/msm8998-common
 
-    2dfc71a - Merge https://github.com/wight554/device_xiaomi_msm8998-common into android-9.0 (21 час назад) <andr68rus>
-    ed43956 - [temp] disable deps, use manifest (21 час назад) <andr68rus>
+    2dfc71a - Merge https://github.com/wight554/device_xiaomi_msm8998-common into android-9.0 (3 days ago) <andr68rus>
+    ed43956 - [temp] disable deps, use manifest (3 days ago) <andr68rus>
+    c076716 - Revert "msm8998-common: Remove vsync phase offset configuration" (3 days ago) <Vol Zhdanov>
 
  * device/xiaomi/sagit
 
-    e1fc4e2 - [temp] disable deps, use manifest (21 час назад) <andr68rus>
+    e1fc4e2 - [temp] disable deps, use manifest (3 days ago) <andr68rus>
 
  * frameworks/base
 
-    fdcf762 - Revert "Remove getIntWithSubId in TelephonyManager." (17 секунд назад) <jhenrique09>
-    0d51530 - Stop invoke initAppOps in Camera default constructor. (30 секунд назад) <Daichi Hirono>
-    ca03011 - WifiDisplayController: handle preexisting p2p connection status (23 часа назад) <Li Sun>
-    d8953ee - WiFiDisplayController: Defer the P2P Initialization from its constructor. (23 часа назад) <Purushottam Kushwaha>
-    e73470c - Merge changes for launching wifidisplay from system settings (23 часа назад) <Indranil Chakraborty>
-    6486692 - display: Add support for multiple displays. (23 часа назад) <Dileep Marchya>
+    ca03011 - WifiDisplayController: handle preexisting p2p connection status (3 days ago) <Li Sun>
+    d8953ee - WiFiDisplayController: Defer the P2P Initialization from its constructor. (3 days ago) <Purushottam Kushwaha>
+    e73470c - Merge changes for launching wifidisplay from system settings (3 days ago) <Indranil Chakraborty>
+    6486692 - display: Add support for multiple displays. (3 days ago) <Dileep Marchya>
 
  * frameworks/native
 
-    1df7b71 - sf: Add support for multiple displays (23 часа назад) <Pullakavi Srinivas>
-
- * hardware/interfaces
-
-    94afb50 - wifi: Add logic to create secondary interface for STA mode too. (9 секунд назад) <Purushottam Kushwaha>
-    c4b36c1 - wifi: Add provision to create/remove dynamic interface(s). (10 секунд назад) <Purushottam Kushwaha>
-    8e459f3 - wifi: Fetch softap interface name for creating ap_iface operations. (11 секунд назад) <Purushottam Kushwaha>
-
- * hardware/libhardware_legacy
-
-    8245f15 - Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal (7 секунд назад) <Purushottam Kushwaha>
+    1df7b71 - sf: Add support for multiple displays (3 days ago) <Pullakavi Srinivas>
 
  * hardware/qcom/display-caf-msm8996
 
-    f75b598 - Revert "Revert "display: Define soong namespace"" (20 часов назад) <andr68rus>
-
- * hardware/qcom/display-caf-msm8998
-
-    1be3c7a - display: Define soong namespace (3 секунды назад) <Rashed Abdel-Tawab>
-
- * hardware/qcom/wlan
-
-    17cd08c - Wifi-Hal: Provide support to create/remove wifi interfaces. (13 секунд назад) <Purushottam Kushwaha>
-
- * hardware/ril
-
-    42d8be3 - libril: network selection fix (25 секунд назад) <faust93>
+    f75b598 - Revert "Revert "display: Define soong namespace"" (3 days ago) <andr68rus>
 
  * kernel/xiaomi/msm8998
 
-    b451314 - Merge https://github.com/wight554/chiron into android-9.0 (21 час назад) <andr68rus>
-
- * packages/apps/Dialer
-
-    27974b3 - Control dialer's incoming call proximity sensor check via an overlay (40 секунд назад) <blunden>
+    b451314 - Merge https://github.com/wight554/chiron into android-9.0 (3 days ago) <andr68rus>
 
  * vendor/xiaomi
 
-    52129ac - Merge https://github.com/wight554/vendor_xiaomi into android-9.0 (21 час назад) <andr68rus>
+    52129ac - Merge https://github.com/wight554/vendor_xiaomi into android-9.0 (3 days ago) <andr68rus>
 
  ======================
   ChangeLog 10-15-2018
  ======================
 
- * device/xiaomi/msm8998-common
-
-    c076716 - Revert "msm8998-common: Remove vsync phase offset configuration" (28 часов назад) <Vol Zhdanov>
-
  * kernel/leeco/msm8996
 
-    f48d3af - msm: qpnp-haptic: Process haptics asynchronously (32 часа назад) <Sultanxda>
-    ada8ac6 - msm: qpnp-haptic: set up sysfs interface for common cmhw implementation (32 часа назад) <dianlujitao>
-    171f34e3 - qpnp-haptic: Add sysfs interface to control intensity (32 часа назад) <Willi Ye>
-    5c72188 - config {x2, zl1}: enable CONFIG_SWEEP2SLEEP (32 часа назад) <andr68rus>
-    bf17b23 - sweep2sleep: turn off screen by sweeping over navbar (32 часа назад) <flar2>
-    58bf573 - qpnp-haptic: expose vibrate function (32 часа назад) <flar2>
+    f48d3af - msm: qpnp-haptic: Process haptics asynchronously (3 days ago) <Sultanxda>
+    ada8ac6 - msm: qpnp-haptic: set up sysfs interface for common cmhw implementation (3 days ago) <dianlujitao>
+    171f34e3 - qpnp-haptic: Add sysfs interface to control intensity (3 days ago) <Willi Ye>
+    5c72188 - config {x2, zl1}: enable CONFIG_SWEEP2SLEEP (3 days ago) <andr68rus>
+    bf17b23 - sweep2sleep: turn off screen by sweeping over navbar (3 days ago) <flar2>
+    58bf573 - qpnp-haptic: expose vibrate function (3 days ago) <flar2>
 
  * kernel/xiaomi/msm8998
 
-    40fcbf3 - Revert "msm: mdss: Power on display asynchronously as early as possible" (28 часов назад) <Vol Zhdanov>
-    b5b9902 - qca-wifi-host-cmn: Merge tag 'LA.UM.7.4.r1-03600-8x98.0' into pie (28 часов назад) <Vol Zhdanov>
-    7720999 - qcacld-3.0: Merge tag 'LA.UM.7.4.r1-03600-8x98.0' into pie (28 часов назад) <Vol Zhdanov>
-    349969f - fw-api: Merge tag 'LA.UM.7.4.r1-03600-8x98.0' into pie (28 часов назад) <Vol Zhdanov>
+    40fcbf3 - Revert "msm: mdss: Power on display asynchronously as early as possible" (3 days ago) <Vol Zhdanov>
+    b5b9902 - qca-wifi-host-cmn: Merge tag 'LA.UM.7.4.r1-03600-8x98.0' into pie (3 days ago) <Vol Zhdanov>
+    7720999 - qcacld-3.0: Merge tag 'LA.UM.7.4.r1-03600-8x98.0' into pie (3 days ago) <Vol Zhdanov>
+    349969f - fw-api: Merge tag 'LA.UM.7.4.r1-03600-8x98.0' into pie (3 days ago) <Vol Zhdanov>
 
  ======================
   ChangeLog 10-14-2018
@@ -103,132 +141,6 @@
 
  * frameworks/base
 
-    82dce04 - SystemUI: CpuInfo overlay: bug fixes (3 дня назад) <maxwen>
-    f73242e - ambient display: Fix volume key music control (3 дня назад) <Christopher R. Palmer>
-
- ======================
-  ChangeLog 10-13-2018
- ======================
-
- * device/leeco/msm8996-common
-
-    77874dc - msm8996-common: enable soundtrigger, up audio hal to 4.0 thanks @Shiva (4 дня назад) <andr68rus>
-    09b265c - msm8996-common: import healthd from CAF LA.UM.7.5.r1-02500-8x96.0 and up hal to 2.0 (4 дня назад) <andr68rus>
-    eaa1cdf - msm8996-common: config.fs: remove cnss-daemon to fix it start (4 дня назад) <andr68rus>
-    93d30f8 - Revert "msm8996-common: drop cnss_daemon" (4 дня назад) <andr68rus>
-    bb7ad03 - msm8996-common: fix EUI offline-mode charge for omni pack images into ramdisk, remove unneded flags (4 дня назад) <andr68rus>
-
- * device/leeco/x2
-
-    1b87e62 - clean (3 дня назад) <andr68rus>
-
- * device/leeco/zl1
-
-    2750da3 - [temp] selinux=permissive (3 дня назад) <andr68rus>
-    7b1af48 - omni-fy (3 дня назад) <andr68rus>
-
- * device/xiaomi/msm8998-common
-
-    5913f54 - msm8998-common: Use sdFAT for exFAT support (3 дня назад) <Bruno Martins>
-
- * frameworks/av
-
-    5870f33 - libcameraservice: add TARGET_CAMERA_NEEDS_CLIENT_INFO (4 дня назад) <darkobas>
-    788fd9a - av: camera: catch mad hals that mess up buffer time (4 дня назад) <maxwen>
-
- * frameworks/base
-
-    6540c7c - base: Check early if CPU temp is available (4 дня назад) <Stefan Berger>
-    36462db - SystemUI: CpuInfo overlay, adjust for modern cpus (4 дня назад) <Marko Man>
-    33369c2 - base: Fix CPU info overlay text layout (4 дня назад) <Stefan Berger>
-    18d2bcb - base: Bring back CPU temperature to CPU info overlay (4 дня назад) <Stefan Berger>
-    3fc3166 - base: add CPU info overlay (4 дня назад) <maxwen>
-    005d3a4 - base: move nlp combo config to custom (4 дня назад) <maxwen>
-    b18bf03 - Merge "[1/2] base: power: custom button light" into android-9.0 (4 дня назад) <Max Weninger>
-    ed35240 - Default the network location provider to none (4 дня назад) <Luca Stefani>
-    6011472 - combo issue when location reported by providers do not come with extras (4 дня назад) <Kevin Tang>
-    658097e - Revert "SystemUI: use fp MODE_UNLOCK when pulsing or aod" (4 дня назад) <Marko Man>
-    975a75d - [1/2] base: power: custom button light (4 дня назад) <maxwen>
-    f4c2b9e - NLP Combo feature (4 дня назад) <Dante Russo>
-
- * kernel/xiaomi/msm8998
-
-    9516a1c - {chiron,sagit}_defconfig: Enable sdfat driver (3 дня назад) <Vasishath Kaushal>
-    2adf8c8 - fs: sdfat: Fix compilation without debugging (3 дня назад) <Paul Keith>
-    669d740 - fs: sdfat: push rcu_barrier() from deactivate_locked_super() to filesystems (3 дня назад) <Adek Maulana>
-    fe245c9 - fs: sdfat: Update to version 2.0.8 (3 дня назад) <derfelot>
-    95f0dc9 - fs: sdfat: Update to driver version 2.0.6 (3 дня назад) <Bruno Martins>
-    4018b65 - fs: Import sdFAT driver (3 дня назад) <Bruno Martins>
-    469ef47 - Revert "ion: invalidate the pool pointers after free" (3 дня назад) <Nathan Chancellor>
-    dd5f6fe - Merge tag 'v4.4.161' into pie (3 дня назад) <Vol Zhdanov>
-    b001ade - Linux 4.4.161 (3 дня назад) <Greg Kroah-Hartman>
-    3a07d58 - ebtables: arpreply: Add the standard target sanity check (3 дня назад) <Gao Feng>
-    367222d - ath10k: fix scan crash due to incorrect length calculation (3 дня назад) <Zhi Chen>
-    eee1af4 - tcp: add tcp_ooo_try_coalesce() helper (3 дня назад) <Eric Dumazet>
-    be28848 - tcp: call tcp_drop() from tcp_data_queue_ofo() (3 дня назад) <Eric Dumazet>
-    352b669 - tcp: free batches of packets in tcp_prune_ofo_queue() (3 дня назад) <Eric Dumazet>
-    e747775 - tcp: fix a stale ooo_last_skb after a replace (3 дня назад) <Eric Dumazet>
-    4666b6e - tcp: use an RB tree for ooo receive queue (3 дня назад) <Yaogong Wang>
-    ec7055c - tcp: increment sk_drops for dropped rx packets (3 дня назад) <Eric Dumazet>
-    c4c8445 - ubifs: Check for name being NULL while mounting (3 дня назад) <Richard Weinberger>
-    38ea605 - ucma: fix a use-after-free in ucma_resolve_ip() (3 дня назад) <Cong Wang>
-    b4dd80c - ARC: clone syscall to setp r25 as thread pointer (3 дня назад) <Vineet Gupta>
-    0cbf366 - powerpc/fadump: Return error when fadump registration fails (3 дня назад) <Michal Suchanek>
-    023fdb6 - ath10k: fix use-after-free in ath10k_wmi_cmd_send_nowait (3 дня назад) <Carl Huang>
-    75fe548 - cgroup: Fix deadlock in cpu hotplug path (3 дня назад) <Prateek Sood>
-    fb751ef - ext4: always verify the magic number in xattr blocks (3 дня назад) <Theodore Ts'o>
-    26f9ef6 - of: unittest: Disable interrupt node tests for old world MAC systems (3 дня назад) <Guenter Roeck>
-    d70a678 - USB: serial: simple: add Motorola Tetra MTP6550 id (3 дня назад) <Johan Hovold>
-    ed8649a - xhci: Add missing CAS workaround for Intel Sunrise Point xHCI (3 дня назад) <Mathias Nyman>
-    dce7088 - dm cache: fix resize crash if user doesn't reload cache table (3 дня назад) <Mike Snitzer>
-    1516d9f - PM / core: Clear the direct_complete flag on errors (3 дня назад) <Rafael J. Wysocki>
-    24479b9 - mac80211: fix setting IEEE80211_KEY_FLAG_RX_MGMT for AP mode keys (3 дня назад) <Felix Fietkau>
-    5527ae6 - PCI: Reprogram bridge prefetch registers on resume (3 дня назад) <Daniel Drake>
-    e8dc08a - x86/vdso: Fix vDSO syscall fallback asm constraint regression (3 дня назад) <Andy Lutomirski>
-    5961c3d - x86/vdso: Fix asm constraints on vDSO syscall fallbacks (3 дня назад) <Andy Lutomirski>
-    937b514 - fbdev/omapfb: fix omapfb_memory_read infoleak (3 дня назад) <Tomi Valkeinen>
-    c6f1725 - mm/vmstat.c: skip NR_TLB_REMOTE_FLUSH* properly (3 дня назад) <Jann Horn>
-    aecb8ae - wcnss: Fix buffer overflow in wcnss_prealloc_get (4 дня назад) <Anurag Chouhan>
-    1d4afb0 - cnss2: Clear CNSS_DEV_ERR_NOTIFY after collecting firmware dump (4 дня назад) <Yue Ma>
-
- * vendor/leeco
-
-    4a16d1d - Revert "x2: use imx230_sunny_chromatix.xml from @CBG" (4 дня назад) <andr68rus>
-
- ======================
-  ChangeLog 10-12-2018
- ======================
-
- * device/leeco/msm8996-common
-
-    42c2042 - msm8996-common: add LeDoze (4 дня назад) <andr68rus>
-    25ef327 - msm8996-common: add LeParts (4 дня назад) <andr68rus>
-    2838d5d - msm8996-common: remove lepref (4 дня назад) <andr68rus>
-    c59e864 - msm8996-common: drop cnss_daemon (4 дня назад) <andr68rus>
-    5724f8a - msm8996-common: add seclabel for ftmdaemon to fix its start (4 дня назад) <andr68rus>
-    604f4b4 - msm8996 : Use Stock EUI offline charging animation (4 дня назад) <shivatejapeddi>
-    dcb9769 - msm8996-common: selolicy: label hal_drm and fix policy (4 дня назад) <andr68rus>
-    21eb796 - msm8996-common: fix volte hax toggle (4 дня назад) <andr68rus>
-
- * device/leeco/x2
-
-    a8a82ce - x2: pin imx230_sunny_chromatix.xml to version from @CBG Fix for green tint for Pie for sunny sensors (4 дня назад) <andr68rus>
-
- * device/xiaomi/msm8998-common
-
-    e0216e9 - msm8998-commom: Do not drop IMS packets (5 дней назад) <Sooraj Sasindran>
-    d45cdd9 - msm8998-common: add system property to set AudioFlinger client heap size (5 дней назад) <Satya Krishna Pindiproli>
-
- * packages/apps/OmniGears
-
-    9f4a478 - [2/2] Add back Cpu Info overlay (4 дня назад) <Marko Man>
-    e9bc731 - [2/2] OmniGears: custom button light (4 дня назад) <maxwen>
-
- * vendor/leeco
-
-    0d00fb1 - x2: use imx230_sunny_chromatix.xml from @CBG Fix for green tint for Pie for sunny sensors (4 дня назад) <andr68rus>
-
- * vendor/xiaomi
-
-    d235e24 - msm8998-common: Update blobs to 8.10.11 (5 дней назад) <Vol Zhdanov>
+    82dce04 - SystemUI: CpuInfo overlay: bug fixes (5 days ago) <maxwen>
+    f73242e - ambient display: Fix volume key music control (5 days ago) <Christopher R. Palmer>
 
