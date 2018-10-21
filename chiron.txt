@@ -4,64 +4,122 @@
 
  * bionic
 
-    92fb538 - [DNM] bionic: hack for pthread mutex bug for old camera blob (52 seconds ago) <LuK1337>
+    eb1f758 - [DNM] bionic: hack for pthread mutex bug for old camera blob (48 seconds ago) <LuK1337>
+
+ * build/make
+
+    0a138c7 - build: ota: Support for install tools in /tmp/install (49 seconds ago) <Tom Marshall>
+    646f9e3 - edify: bring back SetPermissionsRecursive (51 seconds ago) <Simon Shields>
 
  * device/leeco/zl1
 
-    3ea6df3 - omni-fy (7 hours ago) <andr68rus>
-    dc39b83 - zl1: Add unpinning support to update-sha1sums.py script (7 hours ago) <Bruno Martins>
-    0f49784 - zl1: Handle moved blobs in update-sha1sums.py script (7 hours ago) <LuK1337>
-    95be6fb - zl1: Add script to update sha1sums of kanged blobs (7 hours ago) <LuK1337>
-    e3cd92c - zl1: Set shipping API level via inherited makefile (7 hours ago) <Rashed Abdel-Tawab>
-    65c64d4 - zl1: drop legacy ppd binary (7 hours ago) <ThEMarD>
-    1b74284 - zl1: kang widevine L1 blobs from 20s CN (7 hours ago) <ThEMarD>
+    516b3ac - zl1: manifest: add UICC secure element to manifest (6 hours ago) <qqzwc>
+    56e6b8a - zl1: update nfc config for nfc card emulation and smartcard service fix (6 hours ago) <qqzwc>
+    3ea6df3 - omni-fy (22 hours ago) <andr68rus>
+    dc39b83 - zl1: Add unpinning support to update-sha1sums.py script (22 hours ago) <Bruno Martins>
+    0f49784 - zl1: Handle moved blobs in update-sha1sums.py script (22 hours ago) <LuK1337>
+    95be6fb - zl1: Add script to update sha1sums of kanged blobs (22 hours ago) <LuK1337>
+    e3cd92c - zl1: Set shipping API level via inherited makefile (22 hours ago) <Rashed Abdel-Tawab>
+    65c64d4 - zl1: drop legacy ppd binary (22 hours ago) <ThEMarD>
+    1b74284 - zl1: kang widevine L1 blobs from 20s CN (22 hours ago) <ThEMarD>
 
  * frameworks/base
 
-    c986a31 - FingerprintService: add property to prevent cleanup of unused fingerprints (2 seconds ago) <codeworkx>
-    3b46d37 - Stop invoke initAppOps in Camera default constructor. (39 seconds ago) <Daichi Hirono>
-    37480cb - QS: add HeadsUp tile (12 hours ago) <Marko Man>
-    fdb2bea - [1/2] base: Fingerprint authentication vibration (12 hours ago) <beanstown106>
+    37eb565 - FingerprintService: add property to prevent cleanup of unused fingerprints (4 seconds ago) <codeworkx>
+    739fcdf - Stop invoke initAppOps in Camera default constructor. (36 seconds ago) <Daichi Hirono>
 
  * hardware/interfaces
 
-    49ef069 - wifi: Add logic to create secondary interface for STA mode too. (24 seconds ago) <Purushottam Kushwaha>
-    5bcf7f9 - wifi: Add provision to create/remove dynamic interface(s). (26 seconds ago) <Purushottam Kushwaha>
-    0e67e64 - wifi: Fetch softap interface name for creating ap_iface operations. (27 seconds ago) <Purushottam Kushwaha>
+    70229d7 - wifi: Add logic to create secondary interface for STA mode too. (23 seconds ago) <Purushottam Kushwaha>
+    f71381b - wifi: Add provision to create/remove dynamic interface(s). (24 seconds ago) <Purushottam Kushwaha>
+    4293c21 - wifi: Fetch softap interface name for creating ap_iface operations. (25 seconds ago) <Purushottam Kushwaha>
 
  * hardware/libhardware_legacy
 
-    696e883 - Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal (23 seconds ago) <Purushottam Kushwaha>
+    1173e26 - Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal (21 seconds ago) <Purushottam Kushwaha>
 
  * hardware/qcom/display-caf-msm8998
 
-    721fd13 - display: Define soong namespace (18 seconds ago) <Rashed Abdel-Tawab>
+    4ddf363 - display: Define soong namespace (16 seconds ago) <Rashed Abdel-Tawab>
 
  * hardware/qcom/wlan
 
-    d4dff76 - Wifi-Hal: Provide support to create/remove wifi interfaces. (28 seconds ago) <Purushottam Kushwaha>
+    827ffcf - Wifi-Hal: Provide support to create/remove wifi interfaces. (26 seconds ago) <Purushottam Kushwaha>
 
  * hardware/ril
 
-    a0e51f6 - libril: network selection fix (33 seconds ago) <faust93>
+    bb96209 - libril: network selection fix (31 seconds ago) <faust93>
 
  * packages/apps/Dialer
 
-    8b05597 - Control dialer's incoming call proximity sensor check via an overlay (47 seconds ago) <blunden>
+    607d465 - Control dialer's incoming call proximity sensor check via an overlay (45 seconds ago) <blunden>
 
- * packages/apps/Settings
+ * vendor/leeco
 
-    17c6490 - Settings: remove input type from summary (12 hours ago) <maxwen>
-
- * vendor/omni
-
-    a94915a - vendor: add compatibility links for bootanimations (12 hours ago) <maxwen>
-    e0cb0de - Revert "bootanimation: hmmm tasty... cookies" (12 hours ago) <Marko Man>
-    4c0be3a - Revert "bootanimation: MOOOAARRR FPS, now with 50 FPS" (12 hours ago) <Marko Man>
-    760f1bd - vendor: add missing pixelmigrate perms (12 hours ago) <Marko Man>
+    2cfa10f - zl1: update org.simalliance.openmobileapi.jar & SmartcardService.apk for nfc card emulation and smartcard service fix (6 hours ago) <qqzwc>
 
  ======================
   ChangeLog 10-20-2018
+ ======================
+
+ * device/xiaomi/chiron
+
+    064a3a0 - chiron: MiuiCamera: add permissions for MiuiCamera (2 days ago) <andr68rus>
+
+ * device/xiaomi/msm8998-common
+
+    9838a22 - msm8998-common: set rlimit memlock to 64MB (2 days ago) <Devi Sandeep Endluri V V>
+    a8838d9 - msm8998-common: Update irq affinity to silver core (2 days ago) <Wei Wang>
+    e1b2434 - msm8998-common: disable sched autogroup (2 days ago) <Wei Wang>
+    9ee3a90 - msm8998-common: rootdir: disable mem_latency governor (2 days ago) <Tim Murray>
+    74c2f4a - msm8998-common: PIN critical apps and system services that get swapped (2 days ago) <Jorim Jaggi>
+    a6e9245 - msm8998-common: Change readahead to 128KiB on post-boot. (2 days ago) <Miguel de Dios>
+    c633776 - msm8998-common: Update time services for P (2 days ago) <Vol Zhdanov>
+    21a566e - msm8998-common: Change for time service (2 days ago) <Mao Jinlong>
+    7c83318 - msm8998-common: Create /data/time folder for time-services (2 days ago) <KevinWWHo>
+    785a6ab - msm8998-common: update gps configs for pie (2 days ago) <erfanoabdi>
+    22e85d9 - mam8998-common: Start loc_launcher as gps user (2 days ago) <Harikrishnan Hariharan>
+    a03141f - msm8998-common: overlay: enable manual provisioning (2 days ago) <xyyx>
+    893afb9 - gps: config: BATCH_SIZE=40 (2 days ago) <andr68rus>
+    27f6b95 - msm8998-common: configs: gps: update from latest miui stable (2 days ago) <Vol Zhdanov>
+    b478ba7 - msm8998-common: gps: update configs from 8.8.24 (2 days ago) <神之圍樓>
+    bf538b7 - msm8998-common: gps: import from LA.UM.7.2.r1-04000-sdm660.0 (2 days ago) <Vol Zhdanov>
+    7cd7e24 - [temp] ignore neverallow (2 days ago) <andr68rus>
+    c0ce98e - [temp] disable ant (2 days ago) <andr68rus>
+    044218c - msm8998-common: XiaomiParts: add russian translation (2 days ago) <andr68rus>
+    e383722 - msm8998-common: XiaomiParts: add Spectrum toggle (2 days ago) <andr68rus>
+    a9b5568 - msm8998-common: overlay: do not use aosp dt2w switch (2 days ago) <Vol Zhdanov>
+    e2bb0ac - msm8998-common: add XiaomiParts (2 days ago) <andr68rus>
+    74d73e3 - msm8998-common: add ambient display (doze) (2 days ago) <andr68rus>
+    af1b139 - msm8998-common: init: set permissions for KCAL (2 days ago) <andr68rus>
+    80629cb - [temp] move qti permissions to system (2 days ago) <andr68rus>
+    080d4b7 - msm8998-common: init: set permission for ufs health (2 days ago) <andr68rus>
+    f01ad3c - msm8998-common: init: create directory for TZ Apps (2 days ago) <andr68rus>
+    87bbbf2 - msm8998-common: init: set permissions for sweep2sleep sysfs (2 days ago) <andr68rus>
+    f395493 - msm8998-common: remove init.spectrum.sh, add prop to vendor_prop (2 days ago) <andr68rus>
+
+ * frameworks/base
+
+    37480cb - QS: add HeadsUp tile (27 hours ago) <Marko Man>
+    fdb2bea - [1/2] base: Fingerprint authentication vibration (27 hours ago) <beanstown106>
+
+ * packages/apps/Settings
+
+    17c6490 - Settings: remove input type from summary (27 hours ago) <maxwen>
+
+ * vendor/omni
+
+    a94915a - vendor: add compatibility links for bootanimations (27 hours ago) <maxwen>
+    e0cb0de - Revert "bootanimation: hmmm tasty... cookies" (27 hours ago) <Marko Man>
+    4c0be3a - Revert "bootanimation: MOOOAARRR FPS, now with 50 FPS" (27 hours ago) <Marko Man>
+    760f1bd - vendor: add missing pixelmigrate perms (27 hours ago) <Marko Man>
+
+ * vendor/xiaomi
+
+    3f7f7e0 - Merge https://github.com/wight554/vendor_xiaomi into android-9.0 (2 days ago) <andr68rus>
+
+ ======================
+  ChangeLog 10-19-2018
  ======================
  * android
 
@@ -77,9 +135,6 @@
 
  * build/make
 
-    9d0e681 - edify: bring back SetPermissionsRecursive (29 hours ago) <Simon Shields>
-    c3975af - [DO NOT MERGE] build: insecure adb (29 hours ago) <andr68rus>
-    4f829cf - build: ota: Support for install tools in /tmp/install (29 hours ago) <Tom Marshall>
     79c4264 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/build into HEAD (2 days ago) <darkobas>
 
  * build/soong
@@ -90,41 +145,17 @@
 
     b797368 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/development into HEAD (2 days ago) <darkobas>
 
- * device/xiaomi/chiron
+ * device/leeco/msm8996-common
 
-    064a3a0 - chiron: MiuiCamera: add permissions for MiuiCamera (31 hours ago) <andr68rus>
+    0d09987 - msm8996-common: use CAF bt (3 days ago) <andr68rus>
+    b4363a9 - msm8996-common: import cryptfs_hw from CAF and add qseecom.h kernel header (3 days ago) <andr68rus>
+    3a60392 - voltehax: disable by default (3 days ago) <andr68rus>
+    8652deb - msm8996-common: set permission for KCAL (3 days ago) <andr68rus>
+    75f874e - Revert "msm8996-common: add cryptfs_hw for omni" (3 days ago) <andr68rus>
+    b8fdf53 - msm8996-common: LePref: clean: remove s2s, vib str, fast charge toggles (3 days ago) <andr68rus>
 
  * device/xiaomi/msm8998-common
 
-    9838a22 - msm8998-common: set rlimit memlock to 64MB (30 hours ago) <Devi Sandeep Endluri V V>
-    a8838d9 - msm8998-common: Update irq affinity to silver core (30 hours ago) <Wei Wang>
-    e1b2434 - msm8998-common: disable sched autogroup (30 hours ago) <Wei Wang>
-    9ee3a90 - msm8998-common: rootdir: disable mem_latency governor (30 hours ago) <Tim Murray>
-    74c2f4a - msm8998-common: PIN critical apps and system services that get swapped (30 hours ago) <Jorim Jaggi>
-    a6e9245 - msm8998-common: Change readahead to 128KiB on post-boot. (30 hours ago) <Miguel de Dios>
-    c633776 - msm8998-common: Update time services for P (30 hours ago) <Vol Zhdanov>
-    21a566e - msm8998-common: Change for time service (30 hours ago) <Mao Jinlong>
-    7c83318 - msm8998-common: Create /data/time folder for time-services (30 hours ago) <KevinWWHo>
-    785a6ab - msm8998-common: update gps configs for pie (30 hours ago) <erfanoabdi>
-    22e85d9 - mam8998-common: Start loc_launcher as gps user (30 hours ago) <Harikrishnan Hariharan>
-    a03141f - msm8998-common: overlay: enable manual provisioning (30 hours ago) <xyyx>
-    893afb9 - gps: config: BATCH_SIZE=40 (30 hours ago) <andr68rus>
-    27f6b95 - msm8998-common: configs: gps: update from latest miui stable (30 hours ago) <Vol Zhdanov>
-    b478ba7 - msm8998-common: gps: update configs from 8.8.24 (30 hours ago) <神之圍樓>
-    bf538b7 - msm8998-common: gps: import from LA.UM.7.2.r1-04000-sdm660.0 (30 hours ago) <Vol Zhdanov>
-    7cd7e24 - [temp] ignore neverallow (31 hours ago) <andr68rus>
-    c0ce98e - [temp] disable ant (31 hours ago) <andr68rus>
-    044218c - msm8998-common: XiaomiParts: add russian translation (31 hours ago) <andr68rus>
-    e383722 - msm8998-common: XiaomiParts: add Spectrum toggle (32 hours ago) <andr68rus>
-    a9b5568 - msm8998-common: overlay: do not use aosp dt2w switch (32 hours ago) <Vol Zhdanov>
-    e2bb0ac - msm8998-common: add XiaomiParts (32 hours ago) <andr68rus>
-    74d73e3 - msm8998-common: add ambient display (doze) (32 hours ago) <andr68rus>
-    af1b139 - msm8998-common: init: set permissions for KCAL (32 hours ago) <andr68rus>
-    80629cb - [temp] move qti permissions to system (32 hours ago) <andr68rus>
-    080d4b7 - msm8998-common: init: set permission for ufs health (33 hours ago) <andr68rus>
-    f01ad3c - msm8998-common: init: create directory for TZ Apps (33 hours ago) <andr68rus>
-    87bbbf2 - msm8998-common: init: set permissions for sweep2sleep sysfs (33 hours ago) <andr68rus>
-    f395493 - msm8998-common: remove init.spectrum.sh, add prop to vendor_prop (33 hours ago) <andr68rus>
     02c4be7 - msm8998-common: init: manualy add ril daemon for omni (2 days ago) <andr68rus>
     455aba7 - msm8996-common: init: set vibrator sysfs permissions (2 days ago) <andr68rus>
     7882740 - msm8998-common: use CAF BT (2 days ago) <andr68rus>
@@ -158,6 +189,13 @@
     07ae11e - configs: sec_config: Remove clients group id from sensors (2 days ago) <Shaikh Shadul>
     dbe724b - configs: wifi: enable runtime pm (2 days ago) <Park Ju Hyung>
     1f278bb - configs: wifi: tune bmps listening interval (2 days ago) <Alex Naidis>
+    3fc7fe1 - msm8998-common: sepolicy: fix power hal breakage (3 days ago) <Demon Singur>
+    3334eb1 - msm8998-common: power: move to xiaomi_msm8998 target (3 days ago) <Demon Singur>
+    8fcd025 - msm8998-common: power: remove VR hints handling (3 days ago) <Demon Singur>
+    890d68e - msm8998-common: power: lower interaction boost (3 days ago) <Demon Singur>
+    8916fef - msm8998-common: power: change to use Value directly (3 days ago) <Wei Wang>
+    cfb2887 - msm8998-common: power: change CPU min freq to 0 in config (3 days ago) <Wei Wang>
+    5e089cc - msm8998-common: power: fix timeout in powerhint.json (3 days ago) <Wei Wang>
 
  * external/e2fsprogs
 
@@ -218,6 +256,11 @@
  * packages/apps/Nfc
 
     7b326fa - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD (2 days ago) <darkobas>
+
+ * packages/apps/OpenDelta
+
+    511fbfa - config: allow homemade update (3 days ago) <andr68rus>
+    bb78f31 - delta config update (3 days ago) <andr68rus>
 
  * packages/apps/PhoneCommon
 
@@ -285,90 +328,61 @@
 
  * vendor/xiaomi
 
-    3f7f7e0 - Merge https://github.com/wight554/vendor_xiaomi into android-9.0 (30 hours ago) <andr68rus>
-
- ======================
-  ChangeLog 10-19-2018
- ======================
-
- * device/leeco/msm8996-common
-
-    0d09987 - msm8996-common: use CAF bt (2 days ago) <andr68rus>
-    b4363a9 - msm8996-common: import cryptfs_hw from CAF and add qseecom.h kernel header (2 days ago) <andr68rus>
-    3a60392 - voltehax: disable by default (2 days ago) <andr68rus>
-    8652deb - msm8996-common: set permission for KCAL (2 days ago) <andr68rus>
-    75f874e - Revert "msm8996-common: add cryptfs_hw for omni" (2 days ago) <andr68rus>
-    b8fdf53 - msm8996-common: LePref: clean: remove s2s, vib str, fast charge toggles (2 days ago) <andr68rus>
-    1452f1d - msm8996: Remove deprecated doze-related overlays (2 days ago) <Bruno Martins>
-    7cd9486 - msm8996: update sec_config from CAF (2 days ago) <ThEMarD>
-    d5795e7 - msm8996-common: Declare PRODUCT_SOONG_NAMESPACES for HALs (2 days ago) <andr68rus>
-    f696da5 - msm8996-common: dont blacklist ro.product.model (2 days ago) <andr68rus>
-    3b7c543 - msm8996-common: enable soundtrigger, up audio hal to 4.0 thanks @Shiva (2 days ago) <andr68rus>
-    357306c - msm8996-common: import healthd from CAF LA.UM.7.5.r1-02500-8x96.0 and up hal to 2.0 (2 days ago) <andr68rus>
-    b368036 - msm8996-common: config.fs: remove cnss-daemon to fix it start (2 days ago) <andr68rus>
-    c79b809 - msm8996-common: fix EUI offline-mode charge for omni pack images into ramdisk, remove unneded flags (2 days ago) <andr68rus>
-    f6186be - msm8996-common: add LeDoze (2 days ago) <andr68rus>
-    2d9c7f8 - msm8996-common: add LeParts (2 days ago) <andr68rus>
-    cb2ef19 - msm8996-common: add seclabel for ftmdaemon to fix its start (2 days ago) <andr68rus>
-    161e43b - msm8996 : Use Stock EUI offline charging animation (2 days ago) <shivatejapeddi>
-    a605590 - msm8996-common: selolicy: label hal_drm and fix policy (2 days ago) <andr68rus>
-
- * device/xiaomi/msm8998-common
-
-    3fc7fe1 - msm8998-common: sepolicy: fix power hal breakage (2 days ago) <Demon Singur>
-    3334eb1 - msm8998-common: power: move to xiaomi_msm8998 target (2 days ago) <Demon Singur>
-    8fcd025 - msm8998-common: power: remove VR hints handling (2 days ago) <Demon Singur>
-    890d68e - msm8998-common: power: lower interaction boost (2 days ago) <Demon Singur>
-    8916fef - msm8998-common: power: change to use Value directly (2 days ago) <Wei Wang>
-    cfb2887 - msm8998-common: power: change CPU min freq to 0 in config (2 days ago) <Wei Wang>
-    5e089cc - msm8998-common: power: fix timeout in powerhint.json (2 days ago) <Wei Wang>
-    3c6f1fe - msm8998-common: power: restart if Audio HAL died with active low_latency hint (2 days ago) <Wei Wang>
-    938ad0c - msm8998-common: power: fix typo in log (2 days ago) <Wei Wang>
-    97e8f35 - msm8998-common: power: Reorder cpu max node value priority (2 days ago) <Wei Wang>
-    84e6525 - msm8998-common: power: set cpufreq max first (2 days ago) <Wei Wang>
-    1cad6ac - msm8998-common: power: Add hint state into PowerHAL in case of restart (2 days ago) <Wei Wang>
-    0629c12 - msm8998-common: power: add atrace into powerhint calls and improve camera powerhint (2 days ago) <Wei Wang>
-    342a104 - msm8998-common: power: change node owner early to reduce permission denial log spam (2 days ago) <Wei Wang>
-    9faf517 - msm8998-common: power: switch to libperfmgr for powerhint (2 days ago) <Wei Wang>
-    882ef45 - msm8998-common: rootdir: remove CPUBW min freq setting (3 days ago) <Wei Wang>
-    87e5577 - msm8998-common: remove qti perf stack (3 days ago) <Demon Singur>
-    13f2731 - msm8998-common: rootdir: performance: Update power tweaks for EAS (3 days ago) <joshuous>
-    6ef6fff - msm8998-common: rootdir: move all performance configurations into one file (3 days ago) <Wight554>
-    450c987 - Revert "[REVERTPLOX]msm8998-common: boot in permissive" (3 days ago) <arian>
-    e7278c2 - msm8998-common: Update ANT+ system blobs to P (3 days ago) <LuK1337>
-
- * kernel/leeco/msm8996
-
-    136139a - {x2,zl1} config: enable CONFIG_IP_NF_TARGET_TTL (2 days ago) <andr68rus>
-    8cbee1e - qcacld-2.0: Disable CONFIG_WLAN_THERMAL_SHUTDOWN (2 days ago) <Ivan Grinko>
-    5ab8e6e - kcal: Enable by default with kcal_sat = 50 (2 days ago) <Fedor917>
-    97ac18a - msm: mdss: kcal: Add KCAL support for post processing control [v2] (2 days ago) <savoca>
-    da64d40 - x2: Add focus fix module parameter (2 days ago) <sdv22>
-
- * packages/apps/OpenDelta
-
-    511fbfa - config: allow homemade update (2 days ago) <andr68rus>
-    bb78f31 - delta config update (2 days ago) <andr68rus>
-
- * vendor/xiaomi
-
-    1431a02 - msm8998-common: Update time services for P (2 days ago) <Vol Zhdanov>
-    5ce0edf - msm8998-common: Update blobs for P (2 days ago) <Vol Zhdanov>
+    1431a02 - msm8998-common: Update time services for P (3 days ago) <Vol Zhdanov>
+    5ce0edf - msm8998-common: Update blobs for P (3 days ago) <Vol Zhdanov>
 
  ======================
   ChangeLog 10-18-2018
  ======================
 
+ * device/leeco/msm8996-common
+
+    1452f1d - msm8996: Remove deprecated doze-related overlays (3 days ago) <Bruno Martins>
+    7cd9486 - msm8996: update sec_config from CAF (3 days ago) <ThEMarD>
+    d5795e7 - msm8996-common: Declare PRODUCT_SOONG_NAMESPACES for HALs (3 days ago) <andr68rus>
+    f696da5 - msm8996-common: dont blacklist ro.product.model (3 days ago) <andr68rus>
+    3b7c543 - msm8996-common: enable soundtrigger, up audio hal to 4.0 thanks @Shiva (3 days ago) <andr68rus>
+    357306c - msm8996-common: import healthd from CAF LA.UM.7.5.r1-02500-8x96.0 and up hal to 2.0 (3 days ago) <andr68rus>
+    b368036 - msm8996-common: config.fs: remove cnss-daemon to fix it start (3 days ago) <andr68rus>
+    c79b809 - msm8996-common: fix EUI offline-mode charge for omni pack images into ramdisk, remove unneded flags (3 days ago) <andr68rus>
+    f6186be - msm8996-common: add LeDoze (3 days ago) <andr68rus>
+    2d9c7f8 - msm8996-common: add LeParts (3 days ago) <andr68rus>
+    cb2ef19 - msm8996-common: add seclabel for ftmdaemon to fix its start (3 days ago) <andr68rus>
+    161e43b - msm8996 : Use Stock EUI offline charging animation (3 days ago) <shivatejapeddi>
+    a605590 - msm8996-common: selolicy: label hal_drm and fix policy (3 days ago) <andr68rus>
+
  * device/xiaomi/msm8998-common
 
-    a8260c9 - msm8998-common: media: add highspeed video recording profiles (3 days ago) <Demon Singur>
-    fbf2e94 - msm8998-common: media: increase aac bitrate to 256kb/s (3 days ago) <Demon Singur>
-    71cef28 - msm8998-common: media: allow 120fps video recording (3 days ago) <Demon Singur>
-    9b7f71f - msm8998-common: enable eis in Google Camera (3 days ago) <Demon Singur>
-    34984de - msm8998-common: add google camera telephoto to aux package list (3 days ago) <Demon Singur>
-    bd1d4d4 - msm8998-common: remove dead cameras from the aux package list (3 days ago) <Demon Singur>
-    3cc0326 - msm8998-common: use proper payton graphics stack blobs sha1sums (3 days ago) <Vol Zhdanov>
-    be2ee6f - msm8998-common: Update Graphics stack from LA.UM.7.2.r1-03600-sdm660.0 (3 days ago) <LuK1337>
+    3c6f1fe - msm8998-common: power: restart if Audio HAL died with active low_latency hint (3 days ago) <Wei Wang>
+    938ad0c - msm8998-common: power: fix typo in log (3 days ago) <Wei Wang>
+    97e8f35 - msm8998-common: power: Reorder cpu max node value priority (3 days ago) <Wei Wang>
+    84e6525 - msm8998-common: power: set cpufreq max first (3 days ago) <Wei Wang>
+    1cad6ac - msm8998-common: power: Add hint state into PowerHAL in case of restart (3 days ago) <Wei Wang>
+    0629c12 - msm8998-common: power: add atrace into powerhint calls and improve camera powerhint (3 days ago) <Wei Wang>
+    342a104 - msm8998-common: power: change node owner early to reduce permission denial log spam (3 days ago) <Wei Wang>
+    9faf517 - msm8998-common: power: switch to libperfmgr for powerhint (3 days ago) <Wei Wang>
+    882ef45 - msm8998-common: rootdir: remove CPUBW min freq setting (3 days ago) <Wei Wang>
+    87e5577 - msm8998-common: remove qti perf stack (3 days ago) <Demon Singur>
+    13f2731 - msm8998-common: rootdir: performance: Update power tweaks for EAS (3 days ago) <joshuous>
+    6ef6fff - msm8998-common: rootdir: move all performance configurations into one file (3 days ago) <Wight554>
+    450c987 - Revert "[REVERTPLOX]msm8998-common: boot in permissive" (3 days ago) <arian>
+    e7278c2 - msm8998-common: Update ANT+ system blobs to P (4 days ago) <LuK1337>
+    a8260c9 - msm8998-common: media: add highspeed video recording profiles (4 days ago) <Demon Singur>
+    fbf2e94 - msm8998-common: media: increase aac bitrate to 256kb/s (4 days ago) <Demon Singur>
+    71cef28 - msm8998-common: media: allow 120fps video recording (4 days ago) <Demon Singur>
+    9b7f71f - msm8998-common: enable eis in Google Camera (4 days ago) <Demon Singur>
+    34984de - msm8998-common: add google camera telephoto to aux package list (4 days ago) <Demon Singur>
+    bd1d4d4 - msm8998-common: remove dead cameras from the aux package list (4 days ago) <Demon Singur>
+    3cc0326 - msm8998-common: use proper payton graphics stack blobs sha1sums (4 days ago) <Vol Zhdanov>
+    be2ee6f - msm8998-common: Update Graphics stack from LA.UM.7.2.r1-03600-sdm660.0 (4 days ago) <LuK1337>
+
+ * kernel/leeco/msm8996
+
+    136139a - {x2,zl1} config: enable CONFIG_IP_NF_TARGET_TTL (3 days ago) <andr68rus>
+    8cbee1e - qcacld-2.0: Disable CONFIG_WLAN_THERMAL_SHUTDOWN (3 days ago) <Ivan Grinko>
+    5ab8e6e - kcal: Enable by default with kcal_sat = 50 (3 days ago) <Fedor917>
+    97ac18a - msm: mdss: kcal: Add KCAL support for post processing control [v2] (3 days ago) <savoca>
+    da64d40 - x2: Add focus fix module parameter (3 days ago) <sdv22>
 
  ======================
   ChangeLog 10-17-2018
@@ -376,27 +390,16 @@
 
  * device/xiaomi/msm8998-common
 
-    5e5aef3 - msm8998-common: Use MIUI poweroff charging animation (4 days ago) <Bruno Martins>
-    7a3921e - msm8998-common: Only include bitness of hal impls that is used. (4 days ago) <Steven Moreland>
-    815c118 - msm8998-common: update media stack from LA.UM.7.2.r1-03600-sdm660.0 (4 days ago) <Vol Zhdanov>
-    8f52d9c - msm8998-common: Update Vulkan to P blobs (4 days ago) <Vol Zhdanov>
-    f79b000 - msm8998-common: Update SDM blobs from LA.UM.7.2.r1-03600-sdm660.0 (4 days ago) <LuK1337>
-    33e029d - msm8998-common: Use sdFAT for exFAT support (5 days ago) <Bruno Martins>
-    864a4a8 - msm8998-common: add system property to set AudioFlinger client heap size (5 days ago) <Satya Krishna Pindiproli>
-    45aef7a - msm8998-common: disable 3D audio (5 days ago) <Ramjee Singh>
-    1ee1922 - msm8998-common: disable KPI optimization (5 days ago) <Rashed Abdel-Tawab>
-    931590f - msm8998-common: sepolicy: let audio hal to write to acdb files (5 days ago) <Demon Singur>
-    abfcea6 - msm8998-common: sepolicy: let qti gnss hal write to location data files (5 days ago) <Demon Singur>
+    5e5aef3 - msm8998-common: Use MIUI poweroff charging animation (5 days ago) <Bruno Martins>
+    7a3921e - msm8998-common: Only include bitness of hal impls that is used. (5 days ago) <Steven Moreland>
+    815c118 - msm8998-common: update media stack from LA.UM.7.2.r1-03600-sdm660.0 (5 days ago) <Vol Zhdanov>
+    8f52d9c - msm8998-common: Update Vulkan to P blobs (5 days ago) <Vol Zhdanov>
 
  * frameworks/base
 
-    6f940bd - Revert "Remove getIntWithSubId in TelephonyManager." (4 days ago) <jhenrique09>
-
- * packages/apps/OmniGears
-
-    9e05f09 - [2/2] OmniGears: Fingerprint authentication vibration (5 days ago) <beanstown106>
+    6f940bd - Revert "Remove getIntWithSubId in TelephonyManager." (5 days ago) <jhenrique09>
 
  * vendor/xiaomi
 
-    d9059db - msm8998-common: use stock media and graphics stacks (4 days ago) <Vol Zhdanov>
+    d9059db - msm8998-common: use stock media and graphics stacks (5 days ago) <Vol Zhdanov>
 
