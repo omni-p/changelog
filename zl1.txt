@@ -4,74 +4,72 @@
 
  * bionic
 
-    113178b - [DNM] bionic: hack for pthread mutex bug for old camera blob (46 seconds ago) <LuK1337>
+    8485317 - [DNM] bionic: hack for pthread mutex bug for old camera blob (47 seconds ago) <LuK1337>
 
  * build/make
 
-    4ce4c2a - build: ota: Support for install tools in /tmp/install (47 seconds ago) <Tom Marshall>
-    7e6aef7 - edify: bring back SetPermissionsRecursive (49 seconds ago) <Simon Shields>
+    72c7359 - build: ota: Support for install tools in /tmp/install (48 seconds ago) <Tom Marshall>
+    72c3ed3 - edify: bring back SetPermissionsRecursive (50 seconds ago) <Simon Shields>
 
  * device/leeco/msm8996-common
 
-    ad87c9b - msm8996-common: remove camera focus fix if zl1 (20 hours ago) <andr68rus>
+    ad87c9b - msm8996-common: remove camera focus fix if zl1 (22 hours ago) <andr68rus>
 
  * device/leeco/x2
 
-    0d7ced1 - [temp] x2: selinux permissive now (9 hours ago) <andr68rus>
-    d24d177 - omni-fy (9 hours ago) <andr68rus>
+    0d7ced1 - [temp] x2: selinux permissive now (11 hours ago) <andr68rus>
+    d24d177 - omni-fy (11 hours ago) <andr68rus>
 
  * device/xiaomi/msm8998-common
 
-    7fda6df - init: debug: add loggy service (disabled by default) (11 hours ago) <andr68rus>
-    8852b23 - msm8998-common: move qti-whitelist.xml to system (21 hours ago) <andr68rus>
-    3333937 - msm8998-common: XiaomiParts: add KCAL display calibration (22 hours ago) <andr68rus>
-    ba3d576 - msm8998-common: omni-fy vendor init (22 hours ago) <andr68rus>
-    8453fd6 - Revert "msm8998-common: remove vendor init" (22 hours ago) <andr68rus>
-    bbe4c36 - msm8998-common: data-ipa-cfg-mgr: import from LA.UM.7.4.r1-03600-8x98.0 (23 hours ago) <andr68rus>
-    5bb2b99 - Merge https://github.com/wight554/device_xiaomi_msm8998-common into android-9.0-old (23 hours ago) <andr68rus>
+    7fda6df - init: debug: add loggy service (disabled by default) (13 hours ago) <andr68rus>
+    8852b23 - msm8998-common: move qti-whitelist.xml to system (22 hours ago) <andr68rus>
+    3333937 - msm8998-common: XiaomiParts: add KCAL display calibration (24 hours ago) <andr68rus>
+    ba3d576 - msm8998-common: omni-fy vendor init (24 hours ago) <andr68rus>
+    8453fd6 - Revert "msm8998-common: remove vendor init" (24 hours ago) <andr68rus>
 
  * frameworks/base
 
-    13f6b88 - FingerprintService: add property to prevent cleanup of unused fingerprints (2 seconds ago) <codeworkx>
-    90fee1d - Stop invoke initAppOps in Camera default constructor. (33 seconds ago) <Daichi Hirono>
+    f0f7656 - FingerprintService: add property to prevent cleanup of unused fingerprints (2 seconds ago) <codeworkx>
+    8c72596 - Stop invoke initAppOps in Camera default constructor. (33 seconds ago) <Daichi Hirono>
 
  * hardware/interfaces
 
-    caceed9 - wifi: Add logic to create secondary interface for STA mode too. (21 seconds ago) <Purushottam Kushwaha>
-    a4d1070 - wifi: Add provision to create/remove dynamic interface(s). (22 seconds ago) <Purushottam Kushwaha>
-    684d20b - wifi: Fetch softap interface name for creating ap_iface operations. (23 seconds ago) <Purushottam Kushwaha>
+    54e980b - wifi: Add logic to create secondary interface for STA mode too. (20 seconds ago) <Purushottam Kushwaha>
+    9d77f13 - wifi: Add provision to create/remove dynamic interface(s). (21 seconds ago) <Purushottam Kushwaha>
+    244e932 - wifi: Fetch softap interface name for creating ap_iface operations. (22 seconds ago) <Purushottam Kushwaha>
 
  * hardware/libhardware_legacy
 
-    2733291 - Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal (20 seconds ago) <Purushottam Kushwaha>
+    ff0bc54 - Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal (19 seconds ago) <Purushottam Kushwaha>
 
  * hardware/qcom/display-caf-msm8998
 
-    a33d4dc - display: Define soong namespace (15 seconds ago) <Rashed Abdel-Tawab>
+    6b58442 - display: Define soong namespace (14 seconds ago) <Rashed Abdel-Tawab>
 
  * hardware/qcom/wlan
 
-    d1d997b - Wifi-Hal: Provide support to create/remove wifi interfaces. (24 seconds ago) <Purushottam Kushwaha>
+    5de45a3 - Wifi-Hal: Provide support to create/remove wifi interfaces. (23 seconds ago) <Purushottam Kushwaha>
 
  * hardware/ril
 
-    5b42e1d - libril: network selection fix (29 seconds ago) <faust93>
+    edd8bf1 - libril: network selection fix (29 seconds ago) <faust93>
 
  * kernel/xiaomi/msm8998
 
-    ca163e7 - Merge https://github.com/wight554/chiron into android-9.0 (22 hours ago) <andr68rus>
+    ca163e7 - Merge https://github.com/wight554/chiron into android-9.0 (23 hours ago) <andr68rus>
 
  * packages/apps/Dialer
 
-    f0405bf - Control dialer's incoming call proximity sensor check via an overlay (43 seconds ago) <blunden>
+    ffe9c04 - Control dialer's incoming call proximity sensor check via an overlay (44 seconds ago) <blunden>
 
  * packages/apps/OpenDelta
 
-    90e7a31 - teset2 (17 hours ago) <andr68rus>
-    d94b5a5 - https->http (17 hours ago) <andr68rus>
-    7b39169 - test (17 hours ago) <andr68rus>
-    722c8bc - switch to https (17 hours ago) <andr68rus>
-    47ad72c - OpenDelta: dont call clearState for AB updates (17 hours ago) <maxwen>
+    6a5a4f7 - config for omni (3 minutes ago) <andr68rus>
+    d94b5a5 - https->http (18 hours ago) <andr68rus>
+    7b39169 - test (18 hours ago) <andr68rus>
+    722c8bc - switch to https (18 hours ago) <andr68rus>
+    47ad72c - OpenDelta: dont call clearState for AB updates (18 hours ago) <maxwen>
 
  ======================
   ChangeLog 10-22-2018
@@ -81,6 +79,11 @@
 
     516b3ac - zl1: manifest: add UICC secure element to manifest (2 days ago) <qqzwc>
     56e6b8a - zl1: update nfc config for nfc card emulation and smartcard service fix (2 days ago) <qqzwc>
+
+ * device/xiaomi/msm8998-common
+
+    bbe4c36 - msm8998-common: data-ipa-cfg-mgr: import from LA.UM.7.4.r1-03600-8x98.0 (24 hours ago) <andr68rus>
+    5bb2b99 - Merge https://github.com/wight554/device_xiaomi_msm8998-common into android-9.0-old (24 hours ago) <andr68rus>
 
  * vendor/leeco
 
@@ -149,7 +152,7 @@
 
  * device/xiaomi/chiron
 
-    064a3a0 - chiron: MiuiCamera: add permissions for MiuiCamera (3 days ago) <andr68rus>
+    064a3a0 - chiron: MiuiCamera: add permissions for MiuiCamera (4 days ago) <andr68rus>
 
  * device/xiaomi/msm8998-common
 
@@ -295,7 +298,7 @@
 
  * vendor/xiaomi
 
-    3f7f7e0 - Merge https://github.com/wight554/vendor_xiaomi into android-9.0 (3 days ago) <andr68rus>
+    3f7f7e0 - Merge https://github.com/wight554/vendor_xiaomi into android-9.0 (4 days ago) <andr68rus>
 
  ======================
   ChangeLog 10-19-2018
