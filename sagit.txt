@@ -4,55 +4,55 @@
 
  * bionic
 
-    e64589b - [DNM] bionic: hack for pthread mutex bug for old camera blob (51 seconds ago) <LuK1337>
+    c816fee - [DNM] bionic: hack for pthread mutex bug for old camera blob (48 seconds ago) <LuK1337>
 
  * build/make
 
-    56b0be2 - build: ota: Support for install tools in /tmp/install (53 seconds ago) <Tom Marshall>
-    bdd84ed - edify: bring back SetPermissionsRecursive (54 seconds ago) <Simon Shields>
+    384ac8f - build: ota: Support for install tools in /tmp/install (49 seconds ago) <Tom Marshall>
+    6670e69 - edify: bring back SetPermissionsRecursive (51 seconds ago) <Simon Shields>
 
  * device/leeco/msm8996-common
 
-    4c5732f - Update thermal-engine.conf (5 hours ago) <andr68rus>
+    4c5732f - Update thermal-engine.conf (12 hours ago) <andr68rus>
 
  * device/leeco/x2
 
-    b8bc4a4 - x2: commonize overlay (3 hours ago) <andr68rus>
+    b8bc4a4 - x2: commonize overlay (10 hours ago) <andr68rus>
 
  * frameworks/base
 
-    4d054ff - FingerprintService: add property to prevent cleanup of unused fingerprints (2 seconds ago) <codeworkx>
-    d05a0e3 - Stop invoke initAppOps in Camera default constructor. (34 seconds ago) <Daichi Hirono>
+    24e35ac - FingerprintService: add property to prevent cleanup of unused fingerprints (2 seconds ago) <codeworkx>
+    b55c7b3 - Stop invoke initAppOps in Camera default constructor. (33 seconds ago) <Daichi Hirono>
 
  * hardware/interfaces
 
-    a5a671a - wifi: Add logic to create secondary interface for STA mode too. (21 seconds ago) <Purushottam Kushwaha>
-    8855c79 - wifi: Add provision to create/remove dynamic interface(s). (22 seconds ago) <Purushottam Kushwaha>
-    3193fa3 - wifi: Fetch softap interface name for creating ap_iface operations. (23 seconds ago) <Purushottam Kushwaha>
+    85bbd35 - wifi: Add logic to create secondary interface for STA mode too. (21 seconds ago) <Purushottam Kushwaha>
+    862d912 - wifi: Add provision to create/remove dynamic interface(s). (22 seconds ago) <Purushottam Kushwaha>
+    6e1606a - wifi: Fetch softap interface name for creating ap_iface operations. (23 seconds ago) <Purushottam Kushwaha>
 
  * hardware/libhardware_legacy
 
-    f809651 - Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal (20 seconds ago) <Purushottam Kushwaha>
+    cc6bcb6 - Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal (20 seconds ago) <Purushottam Kushwaha>
 
  * hardware/qcom/display-caf-msm8998
 
-    15fa58d - display: Define soong namespace (14 seconds ago) <Rashed Abdel-Tawab>
+    855c992 - display: Define soong namespace (15 seconds ago) <Rashed Abdel-Tawab>
 
  * hardware/qcom/wlan
 
-    475dfbd - Wifi-Hal: Provide support to create/remove wifi interfaces. (24 seconds ago) <Purushottam Kushwaha>
+    e5dfab2 - Wifi-Hal: Provide support to create/remove wifi interfaces. (24 seconds ago) <Purushottam Kushwaha>
 
  * hardware/ril
 
-    c448f3b - libril: network selection fix (29 seconds ago) <faust93>
+    1d57cc6 - libril: network selection fix (29 seconds ago) <faust93>
 
  * packages/apps/Dialer
 
-    ede8cb2 - Control dialer's incoming call proximity sensor check via an overlay (47 seconds ago) <blunden>
+    1427908 - Control dialer's incoming call proximity sensor check via an overlay (45 seconds ago) <blunden>
 
  * vendor/leeco
 
-    7294f1b - msm8996-common: update thermal-engine to working one (5 hours ago) <andr68rus>
+    7294f1b - msm8996-common: update thermal-engine to working one (12 hours ago) <andr68rus>
 
  ======================
   ChangeLog 10-23-2018
@@ -60,7 +60,22 @@
 
  * device/leeco/msm8996-common
 
-    fd1ef2b - overlay: Enable ManualSubProvisioning (27 hours ago) <xyyx>
+    fd1ef2b - overlay: Enable ManualSubProvisioning (34 hours ago) <xyyx>
+
+ * packages/apps/OpenDelta
+
+    06e2398 - config.xml: use my omni ota configuration (2 days ago) <andr68rus>
+    0f4073b - UpdateService: found new build not in property_device, but in path from url_base_full (2 days ago) <andr68rus>
+    b57c805 - Config: enable OTA for all builds (2 days ago) <andr68rus>
+    b0c5cce - UpdateService: dont use https (2 days ago) <andr68rus>
+
+ ======================
+  ChangeLog 10-22-2018
+ ======================
+
+ * device/leeco/msm8996-common
+
+    ad87c9b - msm8996-common: remove camera focus fix if zl1 (3 days ago) <andr68rus>
 
  * device/leeco/x2
 
@@ -70,34 +85,16 @@
  * device/xiaomi/msm8998-common
 
     7fda6df - init: debug: add loggy service (disabled by default) (2 days ago) <andr68rus>
-
- * packages/apps/OpenDelta
-
-    14cd53e - UpdateService: found new build not in %DEVICE%, but in url_base_full (30 hours ago) <andr68rus>
-    13194a4 - config.xml: use my omni ota configuration (31 hours ago) <andr68rus>
-    40a8dfa - Config: enable OTA for all builds (32 hours ago) <andr68rus>
-    b0c5cce - UpdateService: dont use https (32 hours ago) <andr68rus>
-
- ======================
-  ChangeLog 10-22-2018
- ======================
-
- * device/leeco/msm8996-common
-
-    ad87c9b - msm8996-common: remove camera focus fix if zl1 (2 days ago) <andr68rus>
-
- * device/xiaomi/msm8998-common
-
-    8852b23 - msm8998-common: move qti-whitelist.xml to system (2 days ago) <andr68rus>
-    3333937 - msm8998-common: XiaomiParts: add KCAL display calibration (2 days ago) <andr68rus>
-    ba3d576 - msm8998-common: omni-fy vendor init (2 days ago) <andr68rus>
-    8453fd6 - Revert "msm8998-common: remove vendor init" (2 days ago) <andr68rus>
-    bbe4c36 - msm8998-common: data-ipa-cfg-mgr: import from LA.UM.7.4.r1-03600-8x98.0 (2 days ago) <andr68rus>
-    5bb2b99 - Merge https://github.com/wight554/device_xiaomi_msm8998-common into android-9.0-old (2 days ago) <andr68rus>
+    8852b23 - msm8998-common: move qti-whitelist.xml to system (3 days ago) <andr68rus>
+    3333937 - msm8998-common: XiaomiParts: add KCAL display calibration (3 days ago) <andr68rus>
+    ba3d576 - msm8998-common: omni-fy vendor init (3 days ago) <andr68rus>
+    8453fd6 - Revert "msm8998-common: remove vendor init" (3 days ago) <andr68rus>
+    bbe4c36 - msm8998-common: data-ipa-cfg-mgr: import from LA.UM.7.4.r1-03600-8x98.0 (3 days ago) <andr68rus>
+    5bb2b99 - Merge https://github.com/wight554/device_xiaomi_msm8998-common into android-9.0-old (3 days ago) <andr68rus>
 
  * kernel/xiaomi/msm8998
 
-    ca163e7 - Merge https://github.com/wight554/chiron into android-9.0 (2 days ago) <andr68rus>
+    ca163e7 - Merge https://github.com/wight554/chiron into android-9.0 (3 days ago) <andr68rus>
 
  ======================
   ChangeLog 10-21-2018
@@ -105,19 +102,12 @@
 
  * device/leeco/zl1
 
-    516b3ac - zl1: manifest: add UICC secure element to manifest (3 days ago) <qqzwc>
-    56e6b8a - zl1: update nfc config for nfc card emulation and smartcard service fix (3 days ago) <qqzwc>
-    3ea6df3 - omni-fy (4 days ago) <andr68rus>
-    dc39b83 - zl1: Add unpinning support to update-sha1sums.py script (4 days ago) <Bruno Martins>
-    0f49784 - zl1: Handle moved blobs in update-sha1sums.py script (4 days ago) <LuK1337>
-    95be6fb - zl1: Add script to update sha1sums of kanged blobs (4 days ago) <LuK1337>
-    e3cd92c - zl1: Set shipping API level via inherited makefile (4 days ago) <Rashed Abdel-Tawab>
-    65c64d4 - zl1: drop legacy ppd binary (4 days ago) <ThEMarD>
-    1b74284 - zl1: kang widevine L1 blobs from 20s CN (4 days ago) <ThEMarD>
+    516b3ac - zl1: manifest: add UICC secure element to manifest (4 days ago) <qqzwc>
+    56e6b8a - zl1: update nfc config for nfc card emulation and smartcard service fix (4 days ago) <qqzwc>
 
  * vendor/leeco
 
-    2cfa10f - zl1: update org.simalliance.openmobileapi.jar & SmartcardService.apk for nfc card emulation and smartcard service fix (3 days ago) <qqzwc>
+    2cfa10f - zl1: update org.simalliance.openmobileapi.jar & SmartcardService.apk for nfc card emulation and smartcard service fix (4 days ago) <qqzwc>
 
  ======================
   ChangeLog 10-20-2018
@@ -127,23 +117,20 @@
 
     393afb8 - msm8996-common: overlay: hw button support (4 days ago) <andr68rus>
 
- * device/xiaomi/chiron
+ * device/leeco/zl1
 
-    064a3a0 - chiron: MiuiCamera: add permissions for MiuiCamera (5 days ago) <andr68rus>
+    3ea6df3 - omni-fy (4 days ago) <andr68rus>
+    dc39b83 - zl1: Add unpinning support to update-sha1sums.py script (4 days ago) <Bruno Martins>
+    0f49784 - zl1: Handle moved blobs in update-sha1sums.py script (4 days ago) <LuK1337>
+    95be6fb - zl1: Add script to update sha1sums of kanged blobs (4 days ago) <LuK1337>
+    e3cd92c - zl1: Set shipping API level via inherited makefile (4 days ago) <Rashed Abdel-Tawab>
+    65c64d4 - zl1: drop legacy ppd binary (4 days ago) <ThEMarD>
+    1b74284 - zl1: kang widevine L1 blobs from 20s CN (4 days ago) <ThEMarD>
 
  * frameworks/base
 
     37480cb - QS: add HeadsUp tile (4 days ago) <Marko Man>
     fdb2bea - [1/2] base: Fingerprint authentication vibration (4 days ago) <beanstown106>
-
- * kernel/xiaomi/msm8998
-
-    807a54d - {chiron,sagit}_defconfig: Align linker sections (5 days ago) <Sultan Alsawaf>
-    a3ea627 - {chiron,sagit}_defconfig: Omit frame pointer (5 days ago) <Sultan Alsawaf>
-    3663341 - arm64: Don't force FRAME_POINTER (5 days ago) <Sultan Alsawaf>
-    dc676c24 - msm: kgsl: Increase worker thread priority (5 days ago) <Sultan Alsawaf>
-    865c5f5 - {chiron,sagit}_defconfig: Enable BALANCE_ANON_FILE_RECLAIM (5 days ago) <Thierry Strudel>
-    1b7eb95 - of_batterydata: Add fallback to generic node (5 days ago) <dianlujitao>
 
  * packages/apps/Settings
 
@@ -155,8 +142,4 @@
     e0cb0de - Revert "bootanimation: hmmm tasty... cookies" (4 days ago) <Marko Man>
     4c0be3a - Revert "bootanimation: MOOOAARRR FPS, now with 50 FPS" (4 days ago) <Marko Man>
     760f1bd - vendor: add missing pixelmigrate perms (4 days ago) <Marko Man>
-
- * vendor/xiaomi
-
-    3f7f7e0 - Merge https://github.com/wight554/vendor_xiaomi into android-9.0 (5 days ago) <andr68rus>
 
