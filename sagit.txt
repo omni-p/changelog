@@ -1,346 +1,162 @@
  ======================
-  ChangeLog 10-23-2018
+  ChangeLog 10-24-2018
  ======================
 
  * bionic
 
-    a9f4620 - [DNM] bionic: hack for pthread mutex bug for old camera blob (52 seconds ago) <LuK1337>
+    e64589b - [DNM] bionic: hack for pthread mutex bug for old camera blob (51 seconds ago) <LuK1337>
 
  * build/make
 
-    b074deb - build: ota: Support for install tools in /tmp/install (53 seconds ago) <Tom Marshall>
-    06abe8b - edify: bring back SetPermissionsRecursive (54 seconds ago) <Simon Shields>
+    56b0be2 - build: ota: Support for install tools in /tmp/install (53 seconds ago) <Tom Marshall>
+    bdd84ed - edify: bring back SetPermissionsRecursive (54 seconds ago) <Simon Shields>
 
  * device/leeco/msm8996-common
 
-    ad87c9b - msm8996-common: remove camera focus fix if zl1 (16 hours ago) <andr68rus>
+    4c5732f - Update thermal-engine.conf (5 hours ago) <andr68rus>
 
  * device/leeco/x2
 
-    0d7ced1 - [temp] x2: selinux permissive now (5 hours ago) <andr68rus>
-    d24d177 - omni-fy (5 hours ago) <andr68rus>
-
- * device/xiaomi/msm8998-common
-
-    7fda6df - init: debug: add loggy service (disabled by default) (7 hours ago) <andr68rus>
-    8852b23 - msm8998-common: move qti-whitelist.xml to system (16 hours ago) <andr68rus>
-    3333937 - msm8998-common: XiaomiParts: add KCAL display calibration (18 hours ago) <andr68rus>
-    ba3d576 - msm8998-common: omni-fy vendor init (18 hours ago) <andr68rus>
-    8453fd6 - Revert "msm8998-common: remove vendor init" (18 hours ago) <andr68rus>
-    bbe4c36 - msm8998-common: data-ipa-cfg-mgr: import from LA.UM.7.4.r1-03600-8x98.0 (18 hours ago) <andr68rus>
-    5bb2b99 - Merge https://github.com/wight554/device_xiaomi_msm8998-common into android-9.0-old (18 hours ago) <andr68rus>
+    b8bc4a4 - x2: commonize overlay (3 hours ago) <andr68rus>
 
  * frameworks/base
 
-    760cc8e - FingerprintService: add property to prevent cleanup of unused fingerprints (3 seconds ago) <codeworkx>
-    f156c45 - Stop invoke initAppOps in Camera default constructor. (38 seconds ago) <Daichi Hirono>
+    4d054ff - FingerprintService: add property to prevent cleanup of unused fingerprints (2 seconds ago) <codeworkx>
+    d05a0e3 - Stop invoke initAppOps in Camera default constructor. (34 seconds ago) <Daichi Hirono>
 
  * hardware/interfaces
 
-    dbe4950 - wifi: Add logic to create secondary interface for STA mode too. (23 seconds ago) <Purushottam Kushwaha>
-    4604cbf - wifi: Add provision to create/remove dynamic interface(s). (24 seconds ago) <Purushottam Kushwaha>
-    23a3a56 - wifi: Fetch softap interface name for creating ap_iface operations. (25 seconds ago) <Purushottam Kushwaha>
+    a5a671a - wifi: Add logic to create secondary interface for STA mode too. (21 seconds ago) <Purushottam Kushwaha>
+    8855c79 - wifi: Add provision to create/remove dynamic interface(s). (22 seconds ago) <Purushottam Kushwaha>
+    3193fa3 - wifi: Fetch softap interface name for creating ap_iface operations. (23 seconds ago) <Purushottam Kushwaha>
 
  * hardware/libhardware_legacy
 
-    32c7eab - Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal (22 seconds ago) <Purushottam Kushwaha>
+    f809651 - Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal (20 seconds ago) <Purushottam Kushwaha>
 
  * hardware/qcom/display-caf-msm8998
 
-    552b1a8 - display: Define soong namespace (16 seconds ago) <Rashed Abdel-Tawab>
+    15fa58d - display: Define soong namespace (14 seconds ago) <Rashed Abdel-Tawab>
 
  * hardware/qcom/wlan
 
-    528de6d - Wifi-Hal: Provide support to create/remove wifi interfaces. (26 seconds ago) <Purushottam Kushwaha>
+    475dfbd - Wifi-Hal: Provide support to create/remove wifi interfaces. (24 seconds ago) <Purushottam Kushwaha>
 
  * hardware/ril
 
-    aeb7195 - libril: network selection fix (32 seconds ago) <faust93>
-
- * kernel/xiaomi/msm8998
-
-    ca163e7 - Merge https://github.com/wight554/chiron into android-9.0 (18 hours ago) <andr68rus>
+    c448f3b - libril: network selection fix (29 seconds ago) <faust93>
 
  * packages/apps/Dialer
 
-    2b4fde9 - Control dialer's incoming call proximity sensor check via an overlay (47 seconds ago) <blunden>
+    ede8cb2 - Control dialer's incoming call proximity sensor check via an overlay (47 seconds ago) <blunden>
+
+ * vendor/leeco
+
+    7294f1b - msm8996-common: update thermal-engine to working one (5 hours ago) <andr68rus>
+
+ ======================
+  ChangeLog 10-23-2018
+ ======================
+
+ * device/leeco/msm8996-common
+
+    fd1ef2b - overlay: Enable ManualSubProvisioning (27 hours ago) <xyyx>
+
+ * device/leeco/x2
+
+    0d7ced1 - [temp] x2: selinux permissive now (2 days ago) <andr68rus>
+    d24d177 - omni-fy (2 days ago) <andr68rus>
+
+ * device/xiaomi/msm8998-common
+
+    7fda6df - init: debug: add loggy service (disabled by default) (2 days ago) <andr68rus>
 
  * packages/apps/OpenDelta
 
-    90e7a31 - teset2 (12 hours ago) <andr68rus>
-    d94b5a5 - https->http (12 hours ago) <andr68rus>
-    7b39169 - test (12 hours ago) <andr68rus>
-    722c8bc - switch to https (12 hours ago) <andr68rus>
-    47ad72c - OpenDelta: dont call clearState for AB updates (12 hours ago) <maxwen>
+    14cd53e - UpdateService: found new build not in %DEVICE%, but in url_base_full (30 hours ago) <andr68rus>
+    13194a4 - config.xml: use my omni ota configuration (31 hours ago) <andr68rus>
+    40a8dfa - Config: enable OTA for all builds (32 hours ago) <andr68rus>
+    b0c5cce - UpdateService: dont use https (32 hours ago) <andr68rus>
 
  ======================
   ChangeLog 10-22-2018
  ======================
 
- * device/leeco/zl1
+ * device/leeco/msm8996-common
 
-    516b3ac - zl1: manifest: add UICC secure element to manifest (2 days ago) <qqzwc>
-    56e6b8a - zl1: update nfc config for nfc card emulation and smartcard service fix (2 days ago) <qqzwc>
+    ad87c9b - msm8996-common: remove camera focus fix if zl1 (2 days ago) <andr68rus>
 
- * vendor/leeco
+ * device/xiaomi/msm8998-common
 
-    2cfa10f - zl1: update org.simalliance.openmobileapi.jar & SmartcardService.apk for nfc card emulation and smartcard service fix (2 days ago) <qqzwc>
+    8852b23 - msm8998-common: move qti-whitelist.xml to system (2 days ago) <andr68rus>
+    3333937 - msm8998-common: XiaomiParts: add KCAL display calibration (2 days ago) <andr68rus>
+    ba3d576 - msm8998-common: omni-fy vendor init (2 days ago) <andr68rus>
+    8453fd6 - Revert "msm8998-common: remove vendor init" (2 days ago) <andr68rus>
+    bbe4c36 - msm8998-common: data-ipa-cfg-mgr: import from LA.UM.7.4.r1-03600-8x98.0 (2 days ago) <andr68rus>
+    5bb2b99 - Merge https://github.com/wight554/device_xiaomi_msm8998-common into android-9.0-old (2 days ago) <andr68rus>
+
+ * kernel/xiaomi/msm8998
+
+    ca163e7 - Merge https://github.com/wight554/chiron into android-9.0 (2 days ago) <andr68rus>
 
  ======================
   ChangeLog 10-21-2018
  ======================
 
- * device/leeco/msm8996-common
-
-    393afb8 - msm8996-common: overlay: hw button support (3 days ago) <andr68rus>
-
  * device/leeco/zl1
 
-    3ea6df3 - omni-fy (2 days ago) <andr68rus>
-    dc39b83 - zl1: Add unpinning support to update-sha1sums.py script (2 days ago) <Bruno Martins>
-    0f49784 - zl1: Handle moved blobs in update-sha1sums.py script (2 days ago) <LuK1337>
-    95be6fb - zl1: Add script to update sha1sums of kanged blobs (2 days ago) <LuK1337>
-    e3cd92c - zl1: Set shipping API level via inherited makefile (2 days ago) <Rashed Abdel-Tawab>
-    65c64d4 - zl1: drop legacy ppd binary (2 days ago) <ThEMarD>
-    1b74284 - zl1: kang widevine L1 blobs from 20s CN (2 days ago) <ThEMarD>
+    516b3ac - zl1: manifest: add UICC secure element to manifest (3 days ago) <qqzwc>
+    56e6b8a - zl1: update nfc config for nfc card emulation and smartcard service fix (3 days ago) <qqzwc>
+    3ea6df3 - omni-fy (4 days ago) <andr68rus>
+    dc39b83 - zl1: Add unpinning support to update-sha1sums.py script (4 days ago) <Bruno Martins>
+    0f49784 - zl1: Handle moved blobs in update-sha1sums.py script (4 days ago) <LuK1337>
+    95be6fb - zl1: Add script to update sha1sums of kanged blobs (4 days ago) <LuK1337>
+    e3cd92c - zl1: Set shipping API level via inherited makefile (4 days ago) <Rashed Abdel-Tawab>
+    65c64d4 - zl1: drop legacy ppd binary (4 days ago) <ThEMarD>
+    1b74284 - zl1: kang widevine L1 blobs from 20s CN (4 days ago) <ThEMarD>
 
- * frameworks/base
+ * vendor/leeco
 
-    37480cb - QS: add HeadsUp tile (3 days ago) <Marko Man>
-    fdb2bea - [1/2] base: Fingerprint authentication vibration (3 days ago) <beanstown106>
-
- * packages/apps/Settings
-
-    17c6490 - Settings: remove input type from summary (3 days ago) <maxwen>
-
- * vendor/omni
-
-    a94915a - vendor: add compatibility links for bootanimations (3 days ago) <maxwen>
-    e0cb0de - Revert "bootanimation: hmmm tasty... cookies" (3 days ago) <Marko Man>
-    4c0be3a - Revert "bootanimation: MOOOAARRR FPS, now with 50 FPS" (3 days ago) <Marko Man>
-    760f1bd - vendor: add missing pixelmigrate perms (3 days ago) <Marko Man>
+    2cfa10f - zl1: update org.simalliance.openmobileapi.jar & SmartcardService.apk for nfc card emulation and smartcard service fix (3 days ago) <qqzwc>
 
  ======================
   ChangeLog 10-20-2018
  ======================
- * android
-
-    cea67e4 - manifest: android-9.0.0_r12 (4 days ago) <darkobas>
-
- * art
-
-    8ae4840 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/art into HEAD (4 days ago) <darkobas>
-
- * bionic
-
-    70af640 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/bionic into HEAD (4 days ago) <darkobas>
-
- * build/make
-
-    79c4264 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/build into HEAD (4 days ago) <darkobas>
-
- * build/soong
-
-    5e1d8b9 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/build/soong into HEAD (4 days ago) <darkobas>
-
- * development
-
-    b797368 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/development into HEAD (4 days ago) <darkobas>
-
- * device/xiaomi/chiron
-
-    064a3a0 - chiron: MiuiCamera: add permissions for MiuiCamera (3 days ago) <andr68rus>
-
- * device/xiaomi/msm8998-common
-
-    8bd12ad - msm8998-common: set rlimit memlock to 64MB (4 days ago) <Devi Sandeep Endluri V V>
-    4cba33f - msm8998-common: Update irq affinity to silver core (4 days ago) <Wei Wang>
-    1c33a78 - msm8998-common: disable sched autogroup (4 days ago) <Wei Wang>
-    c4336d7 - msm8998-common: rootdir: remove CPUBW min freq setting (4 days ago) <Wei Wang>
-    a6b32f1 - msm8998-common: rootdir: disable mem_latency governor (4 days ago) <Tim Murray>
-    37a8eef - msm8998-common: PIN critical apps and system services that get swapped (4 days ago) <Jorim Jaggi>
-
- * external/e2fsprogs
-
-    e1b8e08 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/external/e2fsprogs into HEAD (4 days ago) <darkobas>
-
- * frameworks/av
-
-    2392ce4 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/frameworks/av into HEAD (4 days ago) <darkobas>
-
- * frameworks/base
-
-    14fb959 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/frameworks/base into HEAD (4 days ago) <darkobas>
-
- * frameworks/native
-
-    c0272b5 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/frameworks/native into HEAD (4 days ago) <darkobas>
-
- * frameworks/opt/net/ims
-
-    3289292 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/frameworks/opt/net/ims into HEAD (4 days ago) <darkobas>
-
- * frameworks/opt/net/wifi
-
-    0cdc76e - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD (4 days ago) <darkobas>
-
- * frameworks/opt/telephony
-
-    fdd311e - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD (4 days ago) <darkobas>
-
- * hardware/interfaces
-
-    c7d69e9 - Merge tag 'android-9.0.0_r12' into HEAD (4 days ago) <Marko Man>
-
- * hardware/qcom/audio
-
-    881a251 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/hardware/qcom/audio into HEAD (4 days ago) <darkobas>
-
- * hardware/qcom/display
-
-    c93dd79 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/hardware/qcom/display into HEAD (4 days ago) <darkobas>
-
- * hardware/qcom/media
-
-    dfcc846 - Merge tag 'android-9.0.0_r12' into HEAD (4 days ago) <darkobas>
-
- * kernel/xiaomi/msm8998
-
-    807a54d - {chiron,sagit}_defconfig: Align linker sections (3 days ago) <Sultan Alsawaf>
-    a3ea627 - {chiron,sagit}_defconfig: Omit frame pointer (3 days ago) <Sultan Alsawaf>
-    3663341 - arm64: Don't force FRAME_POINTER (3 days ago) <Sultan Alsawaf>
-    dc676c24 - msm: kgsl: Increase worker thread priority (3 days ago) <Sultan Alsawaf>
-    865c5f5 - {chiron,sagit}_defconfig: Enable BALANCE_ANON_FILE_RECLAIM (3 days ago) <Thierry Strudel>
-    1b7eb95 - of_batterydata: Add fallback to generic node (3 days ago) <dianlujitao>
-
- * packages/apps/CellBroadcastReceiver
-
-    b0db7a4 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver into HEAD (4 days ago) <darkobas>
-
- * packages/apps/Contacts
-
-    f799d96 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/packages/apps/Contacts into HEAD (4 days ago) <darkobas>
-
- * packages/apps/DocumentsUI
-
-    aa3eb8e - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/packages/apps/DocumentsUI into HEAD (4 days ago) <darkobas>
-
- * packages/apps/Nfc
-
-    7b326fa - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD (4 days ago) <darkobas>
-
- * packages/apps/PhoneCommon
-
-    eb8dee8 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/packages/apps/PhoneCommon into HEAD (4 days ago) <darkobas>
-
- * packages/apps/Settings
-
-    91d3e9a - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD (4 days ago) <darkobas>
-
- * packages/apps/SettingsIntelligence
-
-    09efc19 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/packages/apps/SettingsIntelligence into HEAD (4 days ago) <darkobas>
-
- * packages/apps/Stk
-
-    89cac6e - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/packages/apps/Stk into HEAD (4 days ago) <darkobas>
-
- * packages/inputmethods/LatinIME
-
-    250960b - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/packages/inputmethods/LatinIME into HEAD (4 days ago) <darkobas>
-
- * packages/providers/DownloadProvider
-
-    d02123a - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD (4 days ago) <darkobas>
-
- * packages/services/Telecomm
-
-    b28aef4 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD (4 days ago) <darkobas>
-
- * packages/services/Telephony
-
-    5a990c2 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD (4 days ago) <darkobas>
-
- * system/bt
-
-    301141c - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/system/bt into HEAD (4 days ago) <darkobas>
-
- * system/libhidl
-
-    97249d5 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/system/libhidl into HEAD (4 days ago) <darkobas>
-
- * system/media
-
-    bb4886a - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/system/media into HEAD (4 days ago) <darkobas>
-
- * system/netd
-
-    b15d342 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/system/netd into HEAD (4 days ago) <darkobas>
-
- * system/nfc
-
-    3ce9651 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/system/nfc into HEAD (4 days ago) <darkobas>
-
- * system/sepolicy
-
-    eca5bd8 - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/system/sepolicy into HEAD (4 days ago) <darkobas>
-
- * system/vold
-
-    100de6b - Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/system/vold into HEAD (4 days ago) <darkobas>
-
- * vendor/omni
-
-    9904aa5 - vendor: add DocumentsUI to forked list (4 days ago) <darkobas>
-
- * vendor/xiaomi
-
-    3f7f7e0 - Merge https://github.com/wight554/vendor_xiaomi into android-9.0 (3 days ago) <andr68rus>
-
- ======================
-  ChangeLog 10-19-2018
- ======================
 
  * device/leeco/msm8996-common
 
-    0d09987 - msm8996-common: use CAF bt (4 days ago) <andr68rus>
-    b4363a9 - msm8996-common: import cryptfs_hw from CAF and add qseecom.h kernel header (4 days ago) <andr68rus>
-    3a60392 - voltehax: disable by default (4 days ago) <andr68rus>
-    8652deb - msm8996-common: set permission for KCAL (4 days ago) <andr68rus>
-    75f874e - Revert "msm8996-common: add cryptfs_hw for omni" (4 days ago) <andr68rus>
-    b8fdf53 - msm8996-common: LePref: clean: remove s2s, vib str, fast charge toggles (4 days ago) <andr68rus>
-    1452f1d - msm8996: Remove deprecated doze-related overlays (4 days ago) <Bruno Martins>
-    7cd9486 - msm8996: update sec_config from CAF (4 days ago) <ThEMarD>
-    d5795e7 - msm8996-common: Declare PRODUCT_SOONG_NAMESPACES for HALs (4 days ago) <andr68rus>
-    f696da5 - msm8996-common: dont blacklist ro.product.model (4 days ago) <andr68rus>
-    3b7c543 - msm8996-common: enable soundtrigger, up audio hal to 4.0 thanks @Shiva (4 days ago) <andr68rus>
-    357306c - msm8996-common: import healthd from CAF LA.UM.7.5.r1-02500-8x96.0 and up hal to 2.0 (4 days ago) <andr68rus>
-    b368036 - msm8996-common: config.fs: remove cnss-daemon to fix it start (4 days ago) <andr68rus>
-    c79b809 - msm8996-common: fix EUI offline-mode charge for omni pack images into ramdisk, remove unneded flags (4 days ago) <andr68rus>
-    f6186be - msm8996-common: add LeDoze (4 days ago) <andr68rus>
-    2d9c7f8 - msm8996-common: add LeParts (4 days ago) <andr68rus>
-    cb2ef19 - msm8996-common: add seclabel for ftmdaemon to fix its start (4 days ago) <andr68rus>
-    161e43b - msm8996 : Use Stock EUI offline charging animation (4 days ago) <shivatejapeddi>
-    a605590 - msm8996-common: selolicy: label hal_drm and fix policy (4 days ago) <andr68rus>
+    393afb8 - msm8996-common: overlay: hw button support (4 days ago) <andr68rus>
 
- * device/xiaomi/msm8998-common
+ * device/xiaomi/chiron
 
-    1c80f79 - msm8998-common: Change readahead to 128KiB on post-boot. (4 days ago) <Miguel de Dios>
-    b4f6a2f - msm8998-common: Update time services for P (4 days ago) <Vol Zhdanov>
-    edd3ec1 - msm8998-common: Change for time service (4 days ago) <Mao Jinlong>
-    d28596e - msm8998-common: Create /data/time folder for time-services (4 days ago) <KevinWWHo>
-    dc8b809 - msm8998-common: Update blobs for P (4 days ago) <Vol Zhdanov>
+    064a3a0 - chiron: MiuiCamera: add permissions for MiuiCamera (5 days ago) <andr68rus>
 
- * kernel/leeco/msm8996
+ * frameworks/base
 
-    136139a - {x2,zl1} config: enable CONFIG_IP_NF_TARGET_TTL (4 days ago) <andr68rus>
-    8cbee1e - qcacld-2.0: Disable CONFIG_WLAN_THERMAL_SHUTDOWN (4 days ago) <Ivan Grinko>
-    5ab8e6e - kcal: Enable by default with kcal_sat = 50 (4 days ago) <Fedor917>
-    97ac18a - msm: mdss: kcal: Add KCAL support for post processing control [v2] (4 days ago) <savoca>
-    da64d40 - x2: Add focus fix module parameter (4 days ago) <sdv22>
+    37480cb - QS: add HeadsUp tile (4 days ago) <Marko Man>
+    fdb2bea - [1/2] base: Fingerprint authentication vibration (4 days ago) <beanstown106>
+
+ * kernel/xiaomi/msm8998
+
+    807a54d - {chiron,sagit}_defconfig: Align linker sections (5 days ago) <Sultan Alsawaf>
+    a3ea627 - {chiron,sagit}_defconfig: Omit frame pointer (5 days ago) <Sultan Alsawaf>
+    3663341 - arm64: Don't force FRAME_POINTER (5 days ago) <Sultan Alsawaf>
+    dc676c24 - msm: kgsl: Increase worker thread priority (5 days ago) <Sultan Alsawaf>
+    865c5f5 - {chiron,sagit}_defconfig: Enable BALANCE_ANON_FILE_RECLAIM (5 days ago) <Thierry Strudel>
+    1b7eb95 - of_batterydata: Add fallback to generic node (5 days ago) <dianlujitao>
+
+ * packages/apps/Settings
+
+    17c6490 - Settings: remove input type from summary (4 days ago) <maxwen>
+
+ * vendor/omni
+
+    a94915a - vendor: add compatibility links for bootanimations (4 days ago) <maxwen>
+    e0cb0de - Revert "bootanimation: hmmm tasty... cookies" (4 days ago) <Marko Man>
+    4c0be3a - Revert "bootanimation: MOOOAARRR FPS, now with 50 FPS" (4 days ago) <Marko Man>
+    760f1bd - vendor: add missing pixelmigrate perms (4 days ago) <Marko Man>
 
  * vendor/xiaomi
 
-    1431a02 - msm8998-common: Update time services for P (4 days ago) <Vol Zhdanov>
-    5ce0edf - msm8998-common: Update blobs for P (4 days ago) <Vol Zhdanov>
+    3f7f7e0 - Merge https://github.com/wight554/vendor_xiaomi into android-9.0 (5 days ago) <andr68rus>
 
