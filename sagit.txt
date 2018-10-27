@@ -4,52 +4,71 @@
 
  * bionic
 
-    4284bf0 - [DNM] bionic: hack for pthread mutex bug for old camera blob (45 seconds ago) <LuK1337>
+    f9946b4 - [DNM] bionic: hack for pthread mutex bug for old camera blob (45 seconds ago) <LuK1337>
 
  * build/make
 
-    384bd92 - build: ota: Support for install tools in /tmp/install (46 seconds ago) <Tom Marshall>
-    457de8c - edify: bring back SetPermissionsRecursive (49 seconds ago) <Simon Shields>
+    524e989 - build: ota: Support for install tools in /tmp/install (46 seconds ago) <Tom Marshall>
+    d72d751 - edify: bring back SetPermissionsRecursive (47 seconds ago) <Simon Shields>
 
  * device/leeco/msm8996-common
 
-    90b4b20 - msm8996: update ueventd.rc from CAF (23 hours ago) <ThEMarD>
-    005fb97 - msm8996: update GPS configs for Pie (23 hours ago) <ThEMarD>
-    4d0079a - msm8996: Create new auto brightness values for Pie (23 hours ago) <ThEMarD>
-    292d894 - Revert "msm8996: Switch to autobrightness values from EUI ROM 30s" (23 hours ago) <andr68rus>
-    4bf624f - x2: lIblight: use lcd-backlight path instead of wled (23 hours ago) <ThEMarD>
+    99156c6 - msm8996-common: init: fix permissions for IR (3 hours ago) <andr68rus>
+
+ * device/leeco/x2
+
+    6e8a864 - x2: audio: increasing voice-handset and voice-handset-tmus as result we have clear and louder sound on handset (3 hours ago) <CrisBalGreece>
+
+ * device/xiaomi/chiron
+
+    5d92c55 - chiron: restore stock volume values (4 hours ago) <Vol Zhdanov>
+    bbdc7e3 - chiron: update brightness tuning from crosshatch (4 hours ago) <Vol Zhdanov>
+    50835e8 - chiron: MiuiCamera: add permissions for MiuiCamera (4 hours ago) <andr68rus>
+    770c63e - chiron: Update power profile for P (4 hours ago) <Bruno Martins>
+    4c8dc19 - chiron: add prebuilt miui camera (4 hours ago) <Vol Zhdanov>
+    bef18f9 - chiron: import fp idc configs (4 hours ago) <Vol Zhdanov>
+    d17d559 - [temp] disable deps, use manifest (4 hours ago) <andr68rus>
+    e437b50 - overlay: set proper battery capacity in power profile (4 hours ago) <Vol Zhdanov>
+    be854b3 - sagit: add stock power profile (4 hours ago) <xiaobai>
+    c04a4cc - overlay: adjust rounded corners overlays (4 hours ago) <Wight554>
+    f339d68 - [temp] use omni-p git for sources (4 hours ago) <andr68rus>
+    6331ca7 - chiron: pin qdcm calibration from polaris (4 hours ago) <Vol Zhdanov>
+
+ * device/xiaomi/msm8998-common
+
+    39c9542 - msm8998-common: Add support for 8.10.25 tz version (4 minutes ago) <wloot>
 
  * frameworks/base
 
-    f689e6f - FingerprintService: add property to prevent cleanup of unused fingerprints (2 seconds ago) <codeworkx>
-    9b30849 - Stop invoke initAppOps in Camera default constructor. (32 seconds ago) <Daichi Hirono>
+    8c9c378 - FingerprintService: add property to prevent cleanup of unused fingerprints (2 seconds ago) <codeworkx>
+    30860d7 - Stop invoke initAppOps in Camera default constructor. (32 seconds ago) <Daichi Hirono>
 
  * hardware/interfaces
 
-    8c8caaa - wifi: Add logic to create secondary interface for STA mode too. (20 seconds ago) <Purushottam Kushwaha>
-    ce49fe0 - wifi: Add provision to create/remove dynamic interface(s). (21 seconds ago) <Purushottam Kushwaha>
-    ead4258 - wifi: Fetch softap interface name for creating ap_iface operations. (22 seconds ago) <Purushottam Kushwaha>
+    655aef0 - wifi: Add logic to create secondary interface for STA mode too. (20 seconds ago) <Purushottam Kushwaha>
+    431648d - wifi: Add provision to create/remove dynamic interface(s). (21 seconds ago) <Purushottam Kushwaha>
+    e419e0c - wifi: Fetch softap interface name for creating ap_iface operations. (22 seconds ago) <Purushottam Kushwaha>
 
  * hardware/libhardware_legacy
 
-    3c2265b - Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal (19 seconds ago) <Purushottam Kushwaha>
+    b8d92e1 - Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal (19 seconds ago) <Purushottam Kushwaha>
 
  * hardware/qcom/display-caf-msm8998
 
-    6d8295b - display: Define soong namespace (14 seconds ago) <Rashed Abdel-Tawab>
+    248681c - display: Define soong namespace (14 seconds ago) <Rashed Abdel-Tawab>
 
  * hardware/qcom/wlan
 
-    09fb2b0 - Wifi-Hal: Provide support to create/remove wifi interfaces. (23 seconds ago) <Purushottam Kushwaha>
+    4dd2f77 - Wifi-Hal: Provide support to create/remove wifi interfaces. (24 seconds ago) <Purushottam Kushwaha>
 
  * packages/apps/Dialer
 
-    d810bc3 - Control dialer's incoming call proximity sensor check via an overlay (41 seconds ago) <blunden>
+    0863e7d - Control dialer's incoming call proximity sensor check via an overlay (42 seconds ago) <blunden>
 
  * vendor/leeco
 
-    dbdf988 - zl1: camera: patched blobs for 60fps by eszdman (7 hours ago) <andr68rus>
-    16af035 - x2: kang imx230_lg blobs from x850 (23 hours ago) <ThEMarD>
+    c16e864 - msm8996-common: add LetvRemoteControl (3 hours ago) <andr68rus>
+    dbdf988 - zl1: camera: patched blobs for 60fps by eszdman (11 hours ago) <andr68rus>
 
  ======================
   ChangeLog 10-26-2018
@@ -57,7 +76,16 @@
 
  * device/leeco/msm8996-common
 
-    536a696 - releasetools.py: mount/unmount system for correct run deunify.sh (32 hours ago) <andr68rus>
+    90b4b20 - msm8996: update ueventd.rc from CAF (27 hours ago) <ThEMarD>
+    005fb97 - msm8996: update GPS configs for Pie (27 hours ago) <ThEMarD>
+    4d0079a - msm8996: Create new auto brightness values for Pie (27 hours ago) <ThEMarD>
+    292d894 - Revert "msm8996: Switch to autobrightness values from EUI ROM 30s" (27 hours ago) <andr68rus>
+    4bf624f - x2: lIblight: use lcd-backlight path instead of wled (27 hours ago) <ThEMarD>
+    536a696 - releasetools.py: mount/unmount system for correct run deunify.sh (2 days ago) <andr68rus>
+
+ * vendor/leeco
+
+    16af035 - x2: kang imx230_lg blobs from x850 (27 hours ago) <ThEMarD>
 
  ======================
   ChangeLog 10-25-2018
@@ -91,19 +119,10 @@
 
     fd1ef2b - overlay: Enable ManualSubProvisioning (4 days ago) <xyyx>
 
- * device/leeco/x2
-
-    0d7ced1 - [temp] x2: selinux permissive now (5 days ago) <andr68rus>
-    d24d177 - omni-fy (5 days ago) <andr68rus>
-
- * device/xiaomi/msm8998-common
-
-    7fda6df - init: debug: add loggy service (disabled by default) (5 days ago) <andr68rus>
-
  * packages/apps/OpenDelta
 
     06e2398 - config.xml: use my omni ota configuration (4 days ago) <andr68rus>
     0f4073b - UpdateService: found new build not in property_device, but in path from url_base_full (4 days ago) <andr68rus>
     b57c805 - Config: enable OTA for all builds (4 days ago) <andr68rus>
-    b0c5cce - UpdateService: dont use https (4 days ago) <andr68rus>
+    b0c5cce - UpdateService: dont use https (5 days ago) <andr68rus>
 
