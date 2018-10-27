@@ -1,0 +1,234 @@
+====================
+     2018-10-27    
+====================
+
+ * bionic
+5492792  [DNM] bionic: hack for pthread mutex bug for old camera blob  [LuK1337]
+
+ * build/make
+f5df8dd  build: Makefile: add hours and minutes to build name  [andr68rus]
+cd23357  add properties for opendelta  [andr68rus]
+b3f73c1  build: make using brotli configurable  [maxwen]
+fdcffa0  Revert "Remove the obsolete UnpackPackageDir() in edify generator"  [andr68rus]
+087c9bc  edify: bring back SetPermissionsRecursive  [Simon Shields]
+24abd39  build: ota: Support for install tools in /tmp/install  [Tom Marshall]
+
+ * device/leeco/msm8996-common
+ad636b7  msm8996-common: init: fix permissions for IR  [andr68rus]
+37e5b13  google: add nexus.xml to unlimite google photo  [andr68rus]
+82ebc68  chiron: Update PixelLauncher from Pixel 3  [Henrique Silva]
+f330fd0  apps: add prebuilt pixel launcher  [Vol Zhdanov]
+
+ * device/leeco/x2
+4ed045a  x2: audio: increasing voice-handset and voice-handset-tmus as result we have clear and louder sound on handset  [CrisBalGreece]
+
+ * frameworks/base
+a055f95  frameworks/base: Support for third party NFC features and extensions  [Puneet Mishra]
+
+ * hardware/qcom/audio-caf-msm8998
+a24d54f  hal: Fix forgotten guards  [Rashed Abdel-Tawab]
+34572b2  Merge tag 'LA.UM.7.4.r1-03800-8x98.0' into p  [Vol Zhdanov]
+
+ * hardware/qcom/display-caf-msm8998
+45825c6  libdisplayconfig: Depend on vendor.display.config@1.0_vendor  [dianlujitao]
+
+ * vendor/leeco
+c16e864  msm8996-common: add LetvRemoteControl  [andr68rus]
+dbdf988  zl1: camera: patched blobs for 60fps by eszdman  [andr68rus]
+
+====================
+     2018-10-26    
+====================
+
+ * device/leeco/msm8996-common
+fe675ca  LePref: remove VoLTE haxx  [andr68rus]
+825dd56  msm8996: update ueventd.rc from CAF  [ThEMarD]
+1495399  msm8996: update GPS configs for Pie  [ThEMarD]
+16f7d2f  msm8996: Create new auto brightness values for Pie  [ThEMarD]
+24eecce  x2: lIblight: use lcd-backlight path instead of wled  [ThEMarD]
+a6effd3  releasetools.py: mount/unmount system for correct run deunify.sh  [andr68rus]
+
+ * frameworks/base
+dad9dac  BatteryMeterView: remove percentage before updating style  [ezio84]
+
+ * packages/apps/OpenDelta
+54a3688  Nitrogen-fy icon  [andr68rus]
+96932a1  UpdateService: multiple timestamp from json.php by 1000 Date's constructor expects the timestamp value to be in milliseconds  [andr68rus]
+b487e81  Nitrogen: dont check android version  [andr68rus]
+
+ * vendor/leeco
+16af035  x2: kang imx230_lg blobs from x850  [ThEMarD]
+
+====================
+     2018-10-25    
+====================
+
+ * frameworks/base
+1d546e5  BatteryMeterView: Fix glitch with percents Remove useless code. If we changed style when charging we had forced percents showing  [xyyx]
+
+ * packages/apps/Launcher3
+8a6839b  Launcher3: Fix compilation warnings  [Alex Cruz]
+1df37b2  Launcher3: Bring balance to the universe  [Alex Cruz]
+88a5b0b  Launcher3: Use Google's strings for Google now panel  [Alex Cruz]
+
+ * packages/apps/NitrogenSettings
+ffecf14  NitrogenSettings: Unify quotes in RU  [Vol Zhdanov]
+
+ * packages/apps/OpenDelta
+9db7b64  nitrogen: update prefix from android_verison to "P"  [andr68rus]
+
+====================
+     2018-10-24    
+====================
+
+ * device/leeco/msm8996-common
+476688b  deunify.sh: remove qti-telephony-common.jar for le_zl1* It cause "no sim" with CAF telephony  [andr68rus]
+d28d4c0  Revert "msm8996: Switch to autobrightness values from EUI ROM 30s"  [andr68rus]
+ee0751e  Update thermal-engine.conf  [andr68rus]
+3e91ed4  Disable PRODUCT_BOOT_JARS += telephony-ext because it added to NOS vendor: https://github.com/nitrogen- */android_vendor_nitrogen/commit/697a97a898df33c538eec5c0bfc5dfd4426455b0  [andr68rus]
+b5aff3b  add OpenDelta  [andr68rus]
+
+ * device/leeco/x2
+a2a10df  x2: commonize overlay  [andr68rus]
+
+ * frameworks/base
+04ceb34  SystemUI: Add Smart Pixels tile  [Adin Kwok]
+e62dfea  StatusBarSignalPolicy: Hide signal icons for disabled SIMs  [Paul Keith]
+
+ * hardware/qcom/audio-caf-msm8998
+c3864a5  hal: fix werror when AUDIO_FEATURE_ENABLED_DTS_EAGLE is enabled  [Chao Chen]
+1a2a7c2  hal: add amplifier hooks for stream parameter manipulation  [codeworkx]
+b9d94ac  hal: switch audio_extn_set_parameters and amplifier_set_parameters  [codeworkx]
+faed2d7  hal: Support the audio amplifier hook  [Daniel Hillenbrand]
+abacbe5  hal: Add missing compress voip PCM device ID  [Erfan Abdi]
+25854df  hal: Extend platform parser to allow device name aliasing  [Ethan Chen]
+e912326  hal: post_proc: Convert volume listener to vendor prop  [Rashed Abdel-Tawab]
+8af9fcc  hal: post_proc: enabled / disable volume listener based on prop  [vivek mehta]
+dbe8a74  hal: Update sound trigger header for UM6  [Rashed Abdel-Tawab]
+33249a2  hal: Haxed soundtrigger header  [Steve Kondik]
+e392c63  hal: Fix flac offload not working  [Keith Mok]
+
+ * packages/apps/Launcher3
+a86b54b  Launcher3: Adjust settings layout some more  [Alex Cruz]
+3db2883  Launcher3: Move package icon to the end if the preference  [Nick Reuter]
+e8fc70d  Launcher3: Workaround the Icon pack issue on adaptive apps  [ElDainosor]
+2698d03  Launcher3: Add iconpack support  [maxwen]
+
+ * packages/apps/OpenDelta
+fdc965d  change config for nitrogen  [andr68rus]
+200e377  Revert "CarbonDelta: Allow toggling A/B perf mode"  [andr68rus]
+
+ * vendor/leeco
+7294f1b  msm8996-common: update thermal-engine to working one  [andr68rus]
+
+====================
+     2018-10-23    
+====================
+
+ * device/leeco/msm8996-common
+1ec7261  overlay: Enable ManualSubProvisioning  [xyyx]
+3f81e25  Revert "msm8996-common: init: fix ril start (remove vendor. and add ril-daemon, because it disabled in omni by default)"  [andr68rus]
+d913983  Nitrogen-fy  [andr68rus]
+
+ * device/leeco/x2
+7f99b13  Nitrogen-fy  [andr68rus]
+0d7ced1  [temp] x2: selinux permissive now  [andr68rus]
+d24d177  omni-fy  [andr68rus]
+
+ * device/leeco/zl1
+e2a019a  Nitrogen-fy  [andr68rus]
+
+ * frameworks/base
+d0e4012  BatteryMeterView: Fix PowerSave mode percents and use same method for charging  [xyyx]
+
+ * packages/apps/Launcher3
+760cd20  Launcher3: Add option to change icon size  [hundeva]
+fd2e5ad  Launcher3: Change columns/rows only for workspace  [ezio84]
+e44107d  Launcher3: Rearrange settings  [Alex Cruz]
+ec31e23  Launcher3: Allow to swipe down on recents view to clear all  [Vachounet]
+63ae0d5  Launcher3: Option to hide/show labels on desktop & app-drawer  [Alexey Derendyaev]
+0a4835e  Launcher3: Allow swipe for google now to be optional  [Thecrazyskull]
+eb94ac1  Launcher3: Animate workspace when animating the Google now page  [Thecrazyskull]
+1c6a6fa  Launcher3: Make sure service is connected before trying to unbind  [Thecrazyskull]
+b6d52f2  Launcher3: Support google now tab  [Thecrazyskull]
+4c44d74  Launcher3: Import reversed google now lib  [Thecrazyskull]
+728a1df  Launcher3: Add options to change grid sizes  [hundeva]
+0a07f53  Launcher3: Fix divide by zero  [Alexander Martinz]
+175c864  Launcher3: Can't search out local app by Chinese  [yingrenw]
+98f80bc  Launcher3: Prevent NPE at logDeepShortcutsOpen  [Alexander Martinz]
+3d9685d  Launcher3: Fix pointer index out of range  [Alexander Martinz]
+e8eef28  Launcher3: Allow resizing any widget  [Nebojsa Cvetkovic]
+a250f74  Launcher3: Ensure fastscroller thumb & text play nice with themes  [Alex Cruz]
+41b73e0  Launcher3: Show adaptive icon shape selection without developer settings enabled  [Amir Zaidi]
+7472ac0  Launcher3: Elevate to 'core/platform' app'  [Alex Cruz]
+e34eb54  Launcher3: Only fail for the current user  [deletescape]
+c4d0cf9  Launcher3: Add back button to Settings  [Alex Cruz]
+136611b  Merge branch 'master' into p  [Vol Zhdanov]
+
+ * packages/apps/OpenDelta
+6d41ad5  replace rebootAdvanced to reboot  [andr68rus]
+06e2398  config.xml: use my omni ota configuration  [andr68rus]
+0f4073b  UpdateService: found new build not in property_device, but in path from url_base_full  [andr68rus]
+b57c805  Config: enable OTA for all builds  [andr68rus]
+b0c5cce  UpdateService: dont use https  [andr68rus]
+
+ * packages/apps/Settings
+d6af58d  Settings: Add Smart Pixels activity to AndroidManifest  [Adin Kwok]
+
+ * vendor/nitrogen
+697a97a  common: Add caf telephony for all  [xyyx]
+
+====================
+     2018-10-22    
+====================
+
+ * device/leeco/msm8996-common
+ad87c9b  msm8996-common: remove camera focus fix if zl1  [andr68rus]
+
+ * frameworks/base
+87e6f49  Configurable 0, 90, 180 and 270 degree rotation  [Ricardo Cerqueira]
+68d5d8e  Fix a NPE in BatteryStatsImpl  [Mike Ma]
+
+ * frameworks/opt/telephony
+907f024  Introduce TelephonyExtUtils  [Michael W]
+
+ * kernel/xiaomi/msm8998
+ca163e7  Merge https://github.com/wight554/chiron into android-9.0  [andr68rus]
+
+ * packages/apps/Gallery2
+b22ea49  Update RU  [xyyx]
+
+ * packages/apps/NitrogenSettings
+960b661  OG: fix layout of AppSelectListPreference  [Marko Man]
+
+ * packages/apps/Settings
+b7a04db  Configurable 0, 90, 180 and 270 degree rotation [2/2]  [kufikugel]
+56a4446  SimSettings: Add manual SIM provisioning support  [Bruno Martins]
+
+ * vendor/codeaurora/telephony
+7d1fa3b  Revert "telephony: Introduce TelephonyExtUtils"  [xyyx]
+
+====================
+     2018-10-21    
+====================
+
+ * device/leeco/zl1
+516b3ac  zl1: manifest: add UICC secure element to manifest  [qqzwc]
+56e6b8a  zl1: update nfc config for nfc card emulation and smartcard service fix  [qqzwc]
+
+ * external/json-c
+0ec1cd4  json-c: build only for caf targets  [Vol Zhdanov]
+
+ * frameworks/opt/telephony
+d87ca5a  Support Fetching IMSI MCC and MNC for RuimRecords.  [Venkat Ram Prakash Kotni]
+302447a  SimPhoneBook: Add ANR/EMAIL support for USIM phonebook.  [Yujing Gu]
+c80510f  DcTracker: Change access modifier of isNvSubscription to protected  [Bruno Martins]
+b48b254  PhoneFactory: fix creating a cdma phone type  [Dan Pasanen]
+6abb3cd  Telephony: Enable NV based CDMA data call.  [Yashdev Singh]
+
+ * hardware/qcom/msm8998
+c611b33  msm8998: exclude caf targets  [Vol Zhdanov]
+
+ * vendor/leeco
+2cfa10f  zl1: update org.simalliance.openmobileapi.jar & SmartcardService.apk for nfc card emulation and smartcard service fix  [qqzwc]
+
