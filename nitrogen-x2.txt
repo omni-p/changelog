@@ -3,7 +3,7 @@
 ====================
 
  * bionic
-e3dcf5d  [DNM] bionic: hack for pthread mutex bug for old camera blob  [LuK1337]
+647f3e8  [DNM] bionic: hack for pthread mutex bug for old camera blob  [LuK1337]
 
  * build/make
 f5df8dd  build: Makefile: add hours and minutes to build name  [andr68rus]
@@ -23,7 +23,7 @@ f330fd0  apps: add prebuilt pixel launcher  [Vol Zhdanov]
 4ed045a  x2: audio: increasing voice-handset and voice-handset-tmus as result we have clear and louder sound on handset  [CrisBalGreece]
 
  * frameworks/base
-e9da9b5  frameworks/base: Support for third party NFC features and extensions  [Puneet Mishra]
+60f1c4b  frameworks/base: Support for third party NFC features and extensions  [Puneet Mishra]
 
  * hardware/qcom/audio-caf-msm8998
 a24d54f  hal: Fix forgotten guards  [Rashed Abdel-Tawab]
@@ -71,6 +71,9 @@ b487e81  Nitrogen: dont check android version  [andr68rus]
 1df37b2  Launcher3: Bring balance to the universe  [Alex Cruz]
 88a5b0b  Launcher3: Use Google's strings for Google now panel  [Alex Cruz]
 
+ * packages/apps/NitrogenSettings
+ffecf14  NitrogenSettings: Unify quotes in RU  [Vol Zhdanov]
+
  * packages/apps/OpenDelta
 9db7b64  nitrogen: update prefix from android_verison to "P"  [andr68rus]
 
@@ -105,11 +108,9 @@ dbe8a74  hal: Update sound trigger header for UM6  [Rashed Abdel-Tawab]
 33249a2  hal: Haxed soundtrigger header  [Steve Kondik]
 e392c63  hal: Fix flac offload not working  [Keith Mok]
 
- * packages/apps/NitrogenSettings
-ffecf14  NitrogenSettings: Unify quotes in RU  [Vol Zhdanov]
-
  * packages/apps/OpenDelta
 fdc965d  change config for nitrogen  [andr68rus]
+200e377  Revert "CarbonDelta: Allow toggling A/B perf mode"  [andr68rus]
 
  * vendor/leeco
 7294f1b  msm8996-common: update thermal-engine to working one  [andr68rus]
@@ -163,7 +164,6 @@ c4d0cf9  Launcher3: Add back button to Settings  [Alex Cruz]
 136611b  Merge branch 'master' into p  [Vol Zhdanov]
 
  * packages/apps/OpenDelta
-200e377  Revert "CarbonDelta: Allow toggling A/B perf mode"  [andr68rus]
 6d41ad5  replace rebootAdvanced to reboot  [andr68rus]
 06e2398  config.xml: use my omni ota configuration  [andr68rus]
 0f4073b  UpdateService: found new build not in property_device, but in path from url_base_full  [andr68rus]
