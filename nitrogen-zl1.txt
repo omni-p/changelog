@@ -3,7 +3,15 @@
 ====================
 
  * bionic
-a6e443c  [DNM] bionic: hack for pthread mutex bug for old camera blob  [LuK1337]
+da9d876  [DNM] bionic: hack for pthread mutex bug for old camera blob  [LuK1337]
+
+ * build/make
+1e21cf0  build: Makefile: add hours and minutes to build name  [andr68rus]
+aa9eb29  add properties for opendelta  [andr68rus]
+5bddd4c  build: make using brotli configurable  [maxwen]
+bbccced  Revert "Remove the obsolete UnpackPackageDir() in edify generator"  [andr68rus]
+c90009b  edify: bring back SetPermissionsRecursive  [Simon Shields]
+4d1d6e9  build: ota: Support for install tools in /tmp/install  [Tom Marshall]
 
  * device/leeco/msm8996-common
 f5ded03  msm8996-common: init: fix permissions for IR  [andr68rus]
@@ -23,14 +31,14 @@ db706ab  Update thermal-engine.conf  [andr68rus]
 22756fc  add OpenDelta  [andr68rus]
 
  * device/leeco/x2
-e877547  x2: vendor_prop: dont use double quotes  [andr68rus]
+d23f5b9  x2: vendor_prop: \ double quotas  [andr68rus]
 4ed045a  x2: audio: increasing voice-handset and voice-handset-tmus as result we have clear and louder sound on handset  [CrisBalGreece]
 
  * device/leeco/zl1
-8900ab2  x2: vendor_prop.mk: dont use double quotes  [andr68rus]
+a3b270e  zl1: vendor_prop: \ double quatas  [andr68rus]
 
  * frameworks/base
-b75e3b9  frameworks/base: Support for third party NFC features and extensions  [Puneet Mishra]
+5b3f67d  frameworks/base: Support for third party NFC features and extensions  [Puneet Mishra]
 
  * vendor/leeco
 c16e864  msm8996-common: add LetvRemoteControl  [andr68rus]
@@ -39,14 +47,6 @@ dbdf988  zl1: camera: patched blobs for 60fps by eszdman  [andr68rus]
 ====================
      2018-10-26    
 ====================
-
- * build/make
-f5df8dd  build: Makefile: add hours and minutes to build name  [andr68rus]
-cd23357  add properties for opendelta  [andr68rus]
-b3f73c1  build: make using brotli configurable  [maxwen]
-fdcffa0  Revert "Remove the obsolete UnpackPackageDir() in edify generator"  [andr68rus]
-087c9bc  edify: bring back SetPermissionsRecursive  [Simon Shields]
-24abd39  build: ota: Support for install tools in /tmp/install  [Tom Marshall]
 
  * frameworks/base
 dad9dac  BatteryMeterView: remove percentage before updating style  [ezio84]
@@ -212,13 +212,6 @@ b7a04db  Configurable 0, 90, 180 and 270 degree rotation [2/2]  [kufikugel]
 
  * external/json-c
 0ec1cd4  json-c: build only for caf targets  [Vol Zhdanov]
-
- * frameworks/opt/telephony
-d87ca5a  Support Fetching IMSI MCC and MNC for RuimRecords.  [Venkat Ram Prakash Kotni]
-302447a  SimPhoneBook: Add ANR/EMAIL support for USIM phonebook.  [Yujing Gu]
-c80510f  DcTracker: Change access modifier of isNvSubscription to protected  [Bruno Martins]
-b48b254  PhoneFactory: fix creating a cdma phone type  [Dan Pasanen]
-6abb3cd  Telephony: Enable NV based CDMA data call.  [Yashdev Singh]
 
  * hardware/qcom/msm8998
 c611b33  msm8998: exclude caf targets  [Vol Zhdanov]
